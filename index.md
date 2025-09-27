@@ -44,17 +44,17 @@ ACL 2025 Main
 
 **WebThinker: Empowering Large Reasoning Models with Deep Research Capability**  
 Xiaoxi Li\*, **Jiajie Jin**\*, Guanting Dong\*, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, Zhicheng Dou  
-Preprint, 2025  
+NeurIPS 2025, Poster  
 [[Paper](https://arxiv.org/pdf/2504.21776)] [[Code](https://github.com/RUC-NLPIR/WebThinker)] [[Huggingface Model](https://huggingface.co/lixiaoxi45/WebThinker-QwQ-32B)]
 
 **Search-o1: Agentic Search-Enhanced Large Reasoning Models**  
 Xiaoxi Li, Guanting Dong, **Jiajie Jin**, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, Zhicheng Dou  
-Preprint, 2025  
+EMNLP 2025 Main, Oral 
 [[Paper](https://arxiv.org/pdf/2501.05366)] [[Code](https://github.com/sunnynexus/Search-o1)] [[Twitter](https://x.com/_akhaliq/status/1877584951840764166?t=fnbTblnqhiPtAyYr1PHbbw&s=19)]
 
 **Single LLM, Multiple Roles: A Unified Retrieval-Augmented Generation Framework Using Role-Specific Token Optimization**  
 Yutao Zhu, Jiajie Jin, Hongjin Qian, Zheng Liu, Zhicheng Dou, Ji-Rong Wen  
-Preprint, 2025  
+EMNLP 2025 Main
 [[Paper](https://arxiv.org/pdf/2505.15444)]
 
 **FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research**  
