@@ -32,6 +32,11 @@ Preprint, 2025
 ACL 2025 Main, Oral
 [[Paper](https://arxiv.org/pdf/2505.10413)] [[Code](https://github.com/ignorejjj/LongRefiner)]
 
+**RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation**  
+Guanting Dong, **Jiajie Jin**, Xiaoxi Li, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen
+ACL 2025 Main  
+[[Paper](https://aclanthology.org/2025.acl-long.179.pdf)]
+
 **Neuro-Symbolic Query Compiler**  
 Yuyao Zhang, Zhicheng Dou, Xiaoxi Li, **Jiajie Jin**, Yongkang Wu, Zhonghua Li, Qi Ye, Ji-Rong Wen  
 ACL 2025 Findings  
