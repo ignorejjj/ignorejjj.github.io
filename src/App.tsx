@@ -22,7 +22,7 @@ function App() {
 
   // Konami Code Easter Egg: ↑↑↓↓←→←→BA
   useEffect(() => {
-    const code = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a']
+    const code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
     let idx = 0
     const handler = (e: KeyboardEvent) => {
       if (e.key === code[idx]) {
@@ -43,11 +43,11 @@ function App() {
   return (
     <div className="app">
       {konamiActive && <div className="konami-overlay">
-        <div className="konami-text">🎮 KONAMI CODE ACTIVATED! 🎮<br/>You found the secret!</div>
+        <div className="konami-text">🎮 KONAMI CODE ACTIVATED! 🎮<br />You found the secret!</div>
       </div>}
       <header className="app-header">
         <div className="ascii-art">
-{`     _ _       _ _         _ _
+          {`     _ _       _ _         _ _
     | (_) __ _(_|_) ___   | (_)_ __
  _  | | |/ _\` | | |/ _ \\  | | | '_ \\
 | |_| | | (_| | | |  __/  | | | | | |
