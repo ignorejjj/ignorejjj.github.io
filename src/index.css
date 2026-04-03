@@ -1,0 +1,92 @@
+:root {
+  /* Nord Palette */
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+  --nord3-bright: #616E88;
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+  --nord7: #8FBCBB;
+  --nord8: #88C0D0;
+  --nord9: #81A1C1;
+  --nord10: #5E81AC;
+  --nord11: #BF616A;
+  --nord12: #D08770;
+  --nord13: #EBCB8B;
+  --nord14: #A3BE8C;
+  --nord15: #B48EAD;
+
+  /* Semantic Colors */
+  --bg-primary: var(--nord0);
+  --bg-terminal: var(--nord1);
+  --bg-hover: var(--nord2);
+  --border-color: var(--nord3);
+  --text-primary: var(--nord6);
+  --text-secondary: var(--nord4);
+  --text-muted: var(--nord3-bright);
+  --accent-cyan: var(--nord8);
+  --accent-blue: var(--nord9);
+  --accent-green: var(--nord14);
+  --accent-purple: var(--nord15);
+  --accent-yellow: var(--nord13);
+  --accent-red: var(--nord11);
+  --accent-orange: var(--nord12);
+
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+::selection {
+  background-color: var(--nord3);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nord3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nord3-bright);
+}

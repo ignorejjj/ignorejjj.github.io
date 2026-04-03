@@ -1,0 +1,40 @@
+.prompt {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.user {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.at {
+  color: var(--text-muted);
+}
+
+.host {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.separator {
+  color: var(--text-muted);
+  margin: 0 4px;
+}
+
+.path {
+  color: var(--accent-purple);
+}
+
+.dollar {
+  color: var(--accent-yellow);
+  margin: 0 6px 0 4px;
+}
+
+.command {
+  color: var(--text-primary);
+}

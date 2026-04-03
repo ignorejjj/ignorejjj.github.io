@@ -1,0 +1,102 @@
+.note {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin: 12px 0 16px;
+}
+
+.comment {
+  color: var(--accent-green);
+}
+
+.yearGroup {
+  margin-bottom: 24px;
+}
+
+.yearHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.yearLabel {
+  color: var(--accent-cyan);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.yearCount {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.paper {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  border-left: 3px solid var(--border-color);
+}
+
+.paper:hover {
+  background: var(--bg-hover);
+  border-left-color: var(--accent-cyan);
+}
+
+.highlight {
+  border-left-color: var(--accent-yellow);
+  background: rgba(235, 203, 139, 0.04);
+}
+
+.highlight:hover {
+  border-left-color: var(--accent-yellow);
+}
+
+.star {
+  color: var(--accent-yellow);
+}
+
+.paperTitle {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.authors {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.me {
+  color: var(--accent-green);
+  font-weight: 600;
+}
+
+.venue {
+  color: var(--accent-purple);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.paperLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.paperLink {
+  color: var(--accent-cyan);
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.paperLink:hover {
+  color: var(--accent-blue);
+}

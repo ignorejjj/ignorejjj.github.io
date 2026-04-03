@@ -1,0 +1,101 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--accent-cyan);
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(136, 192, 208, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.folderIcon {
+  font-size: 16px;
+}
+
+.projectName {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  font-size: 15px;
+  flex: 1;
+}
+
+.stars {
+  color: var(--accent-yellow);
+  font-size: 12px;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.langDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  display: inline-block;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: var(--accent-purple);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(180, 142, 173, 0.1);
+  border: 1px solid rgba(180, 142, 173, 0.2);
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

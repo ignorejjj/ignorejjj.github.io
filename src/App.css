@@ -1,0 +1,101 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.ascii-art {
+  color: var(--accent-cyan);
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: pre;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease 0.4s forwards;
+}
+
+.app-main {
+  width: 100%;
+  max-width: 1000px;
+  flex: 1;
+}
+
+.terminal-body {
+  padding: 24px;
+  min-height: 400px;
+}
+
+.app-footer {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+.footer-prompt {
+  color: var(--accent-green);
+}
+
+.footer-output {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.blink-cursor {
+  animation: blink 1s infinite;
+  color: var(--accent-green);
+  margin-left: 2px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .ascii-art {
+    font-size: 9px;
+  }
+
+  .terminal-body {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ascii-art {
+    font-size: 7px;
+  }
+}
