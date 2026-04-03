@@ -10,14 +10,52 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
+  // 2026
+  {
+    title: 'OmniGAIA: Towards Native Omni-Modal AI Agents',
+    authors: 'Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, Zhicheng Dou',
+    venue: 'Preprint, 2026',
+    year: 2026,
+    paperUrl: 'https://arxiv.org/pdf/2602.22897',
+  },
+  {
+    title: 'LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval',
+    authors: 'Jiajie Jin, Yanzhao Zhang, Mingxin Li, Dingkun Long, Pengjun Xie, Yutao Zhu, Zhicheng Dou',
+    venue: 'SIGIR 2026',
+    year: 2026,
+    highlight: true,
+    paperUrl: 'https://arxiv.org/pdf/2603.01425',
+  },
+  {
+    title: 'GISA: A Benchmark for General Information-Seeking Assistant',
+    authors: 'Yutao Zhu, Xingshuo Zhang, Maosen Zhang, Jiajie Jin, Lian Zhang, Xiaoshuai Song, Kangzhi Zhao, Wencong Zeng, Ruiming Tang, Han Li, Ji-Rong Wen, Zhicheng Dou',
+    venue: 'Preprint, 2026',
+    year: 2026,
+    paperUrl: 'https://arxiv.org/pdf/2602.08543',
+  },
   // 2025
   {
-    title: 'Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search',
+    title: 'HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search',
     authors: 'Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yang Zhao, Hongjin Qian, Zhicheng Dou',
-    venue: 'Preprint, 2025',
+    venue: 'SIGIR 2026',
     year: 2025,
+    highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2507.02652',
     codeUrl: 'https://github.com/ignorejjj/HiRA',
+  },
+  {
+    title: 'DeepAgent: A General Reasoning Agent with Scalable Toolsets',
+    authors: 'Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Guanting Dong, Jiajie Jin, Yinuo Wang, Hao Wang, Yutao Zhu, Ji-Rong Wen, Yuan Lu, Zhicheng Dou',
+    venue: 'Preprint, 2025',
+    year: 2025,
+    paperUrl: 'https://arxiv.org/pdf/2510.21618',
+  },
+  {
+    title: 'FinSight: Towards Real-World Financial Deep Research',
+    authors: 'Jiajie Jin, Yuyao Zhang, Yimeng Xu, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
+    venue: 'Preprint, 2025',
+    year: 2025,
+    paperUrl: 'https://arxiv.org/pdf/2510.16844',
   },
   {
     title: 'Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning',
