@@ -25,7 +25,7 @@ export const publications: Publication[] = [
   {
     title: 'LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval',
     authors: 'Jiajie Jin, Yanzhao Zhang, Mingxin Li, Dingkun Long, Pengjun Xie, Yutao Zhu, Zhicheng Dou',
-    venue: 'SIGIR 2026',
+    venue: 'SIGIR 2026 (CCF-A)',
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2603.01425',
@@ -45,7 +45,7 @@ export const publications: Publication[] = [
   {
     title: 'HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search',
     authors: 'Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yang Zhao, Hongjin Qian, Zhicheng Dou',
-    venue: 'SIGIR 2026',
+    venue: 'SIGIR 2026 (CCF-A)',
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2507.02652',
@@ -85,7 +85,7 @@ export const publications: Publication[] = [
   {
     title: 'Hierarchical Document Refinement for Long-Context Retrieval-Augmented Generation',
     authors: 'Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou',
-    venue: 'ACL 2025 Main, Oral',
+    venue: 'ACL 2025 Main, Oral (CCF-A)',
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2505.10413',
@@ -97,7 +97,7 @@ export const publications: Publication[] = [
   {
     title: 'RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation',
     authors: 'Guanting Dong, Jiajie Jin, Xiaoxi Li, Yutao Zhu, Zhicheng Dou, Ji-Rong Wen',
-    venue: 'ACL 2025 Main',
+    venue: 'ACL 2025 Main (CCF-A)',
     year: 2025,
     paperUrl: 'https://aclanthology.org/2025.acl-long.179.pdf',
     codeUrl: 'https://github.com/RUC-NLPIR/RAG-Critic',
@@ -108,7 +108,7 @@ export const publications: Publication[] = [
   {
     title: 'Neuro-Symbolic Query Compiler',
     authors: 'Yuyao Zhang, Zhicheng Dou, Xiaoxi Li, Jiajie Jin, Yongkang Wu, Zhonghua Li, Qi Ye, Ji-Rong Wen',
-    venue: 'ACL 2025 Findings',
+    venue: 'ACL 2025 Findings (CCF-A)',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2505.11932',
     codeUrl: 'https://github.com/YuyaoZhangQAQ/QCompiler',
@@ -116,7 +116,7 @@ export const publications: Publication[] = [
   {
     title: 'RetroLLM: Empowering Large Language Models to Retrieve Fine-Grained Evidence within Generation',
     authors: 'Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yongkang Wu, Zhonghua Li, Qi Ye, Zhicheng Dou',
-    venue: 'ACL 2025 Main',
+    venue: 'ACL 2025 Main (CCF-A)',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2412.11919',
     codeUrl: 'https://github.com/sunnynexus/RetroLLM',
@@ -124,7 +124,7 @@ export const publications: Publication[] = [
   {
     title: 'WebThinker: Empowering Large Reasoning Models with Deep Research Capability',
     authors: 'Xiaoxi Li*, Jiajie Jin*, Guanting Dong*, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, Zhicheng Dou',
-    venue: 'NeurIPS 2025, Poster',
+    venue: 'NeurIPS 2025, Poster (CCF-A)',
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2504.21776',
@@ -136,7 +136,7 @@ export const publications: Publication[] = [
   {
     title: 'Search-o1: Agentic Search-Enhanced Large Reasoning Models',
     authors: 'Xiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, Zhicheng Dou',
-    venue: 'EMNLP 2025 Main, Oral',
+    venue: 'EMNLP 2025 Main, Oral (CCF-B)',
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2501.05366',
@@ -148,14 +148,14 @@ export const publications: Publication[] = [
   {
     title: 'Single LLM, Multiple Roles: A Unified Retrieval-Augmented Generation Framework Using Role-Specific Token Optimization',
     authors: 'Yutao Zhu, Jiajie Jin, Hongjin Qian, Zheng Liu, Zhicheng Dou, Ji-Rong Wen',
-    venue: 'EMNLP 2025 Main',
+    venue: 'EMNLP 2025 Main (CCF-B)',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2505.15444',
   },
   {
     title: 'FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research',
     authors: 'Jiajie Jin, Yutao Zhu, Zhicheng Dou, Guanting Dong, Xinyu Yang, Chenghao Zhang, Tong Zhao, Zhao Yang, Ji-Rong Wen',
-    venue: 'TheWebConf 2025 Resource, Oral',
+    venue: 'TheWebConf 2025 Resource, Oral (CCF-A)',
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/abs/2405.13576',
@@ -167,7 +167,7 @@ export const publications: Publication[] = [
   {
     title: 'From Matching to Generation: A Survey on Generative Information Retrieval',
     authors: 'Xiaoxi Li, Jiajie Jin, Yujia Zhou, Yuyao Zhang, Peitian Zhang, Yutao Zhu, Zhicheng Dou',
-    venue: 'TOIS, 2025',
+    venue: 'TOIS, 2025 (CCF-A)',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2404.14851',
     codeUrl: 'https://github.com/RUC-NLPIR/GenIR-Survey',
@@ -175,7 +175,7 @@ export const publications: Publication[] = [
   {
     title: 'Retrieving Intent-covering Demonstrations for Clarification Generation in Conversational Search Systems',
     authors: 'Zhenduo Zhao, Chao Qu, Zhicheng Dou, Haocong Chen, Jiajie Jin',
-    venue: 'KDD 2025',
+    venue: 'KDD 2025 (CCF-A)',
     year: 2025,
   },
   // 2024
@@ -190,7 +190,7 @@ export const publications: Publication[] = [
   {
     title: 'Metacognitive Retrieval-Augmented Large Language Models',
     authors: 'Yujia Zhou, Zheng Liu, Jiajie Jin, Jian-Yun Nie, Zhicheng Dou',
-    venue: 'TheWebConf 2024 Oral',
+    venue: 'TheWebConf 2024 Oral (CCF-A)',
     year: 2024,
     paperUrl: 'https://arxiv.org/pdf/2402.11626',
     codeUrl: 'https://github.com/ignorejjj/MetaRAG',
@@ -198,14 +198,14 @@ export const publications: Publication[] = [
   {
     title: 'Cognitive Personalized Search Integrating Large Language Models with an Efficient Memory Mechanism',
     authors: 'Yujia Zhou, Qiannan Zhu, Jiajie Jin, Zhicheng Dou',
-    venue: 'TheWebConf 2024 Oral',
+    venue: 'TheWebConf 2024 Oral (CCF-A)',
     year: 2024,
     paperUrl: 'https://arxiv.org/pdf/2402.10548',
   },
   {
     title: 'Bider: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence',
     authors: 'Jiajie Jin, Yutao Zhu, Yujia Zhou, Zhicheng Dou',
-    venue: 'ACL 2024 Findings',
+    venue: 'ACL 2024 Findings (CCF-A)',
     year: 2024,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2402.12174',
