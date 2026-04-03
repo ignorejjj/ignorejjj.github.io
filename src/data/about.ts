@@ -3,7 +3,7 @@ export const aboutData = {
   nameCn: '金佳杰',
   title: 'PhD Student @ RUC',
   email: 'jinjiajie@ruc.edu.cn',
-  avatar: '/profile.jpg',
+  avatar: '/profile.jpg?v=2',
   github: 'https://github.com/ignorejjj',
   scholar: 'https://scholar.google.com/citations?user=iHCuEo8AAAAJ',
   bio: [
