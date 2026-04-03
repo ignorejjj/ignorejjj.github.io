@@ -99,3 +99,38 @@
     font-size: 7px;
   }
 }
+
+/* Konami Code Easter Egg */
+.konami-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 52, 64, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: konami-in 0.3s ease;
+  pointer-events: none;
+}
+
+.konami-text {
+  font-size: 28px;
+  color: var(--accent-green);
+  text-align: center;
+  line-height: 1.6;
+  animation: konami-bounce 0.5s ease infinite alternate;
+  text-shadow: 0 0 20px var(--accent-green), 0 0 40px var(--accent-green);
+}
+
+@keyframes konami-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes konami-bounce {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}

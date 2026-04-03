@@ -1,6 +1,7 @@
-import { useState, type FC } from 'react'
+import { useState, useEffect, type FC } from 'react'
 import TerminalWindow from './components/Terminal/TerminalWindow'
 import TerminalNav from './components/Terminal/TerminalNav'
+import InteractiveTerminal from './components/Terminal/InteractiveTerminal'
 import About from './components/Sections/About'
 import Publications from './components/Sections/Publications'
 import Projects from './components/Sections/Projects'
@@ -16,10 +17,34 @@ const sections: Record<string, FC> = {
 
 function App() {
   const [activeSection, setActiveSection] = useState('about')
+  const [konamiActive, setKonamiActive] = useState(false)
   const ActiveComponent = sections[activeSection]
+
+  // Konami Code Easter Egg: ↑↑↓↓←→←→BA
+  useEffect(() => {
+    const code = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a']
+    let idx = 0
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === code[idx]) {
+        idx++
+        if (idx === code.length) {
+          setKonamiActive(true)
+          idx = 0
+          setTimeout(() => setKonamiActive(false), 5000)
+        }
+      } else {
+        idx = 0
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [])
 
   return (
     <div className="app">
+      {konamiActive && <div className="konami-overlay">
+        <div className="konami-text">🎮 KONAMI CODE ACTIVATED! 🎮<br/>You found the secret!</div>
+      </div>}
       <header className="app-header">
         <div className="ascii-art">
 {`     _ _       _ _         _ _
@@ -39,6 +64,7 @@ function App() {
           />
           <div className="terminal-body">
             <ActiveComponent />
+            <InteractiveTerminal onNavigate={setActiveSection} />
           </div>
         </TerminalWindow>
       </main>

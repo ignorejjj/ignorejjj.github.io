@@ -156,7 +156,7 @@ export const publications: Publication[] = [
     title: 'FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research',
     authors: 'Jiajie Jin, Yutao Zhu, Zhicheng Dou, Guanting Dong, Xinyu Yang, Chenghao Zhang, Tong Zhao, Zhao Yang, Ji-Rong Wen',
     venue: 'TheWebConf 2025 Resource, Oral (CCF-A)',
-    year: 2025,
+    year: 2024,
     highlight: true,
     paperUrl: 'https://arxiv.org/abs/2405.13576',
     codeUrl: 'https://github.com/RUC-NLPIR/FlashRAG',

@@ -1,0 +1,151 @@
+.wrapper {
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.history {
+  margin-bottom: 8px;
+}
+
+.historyLine {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.outputLine {
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.outputLine a {
+  color: var(--accent-cyan);
+}
+
+.inputLine {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-size: 13px;
+}
+
+.promptUser {
+  color: var(--accent-green);
+}
+
+.promptAt {
+  color: var(--text-muted);
+}
+
+.promptHost {
+  color: var(--accent-cyan);
+}
+
+.promptColon {
+  color: var(--text-muted);
+}
+
+.promptPath {
+  color: var(--accent-purple);
+}
+
+.promptDollar {
+  color: var(--accent-yellow);
+  margin-right: 8px;
+}
+
+.input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  caret-color: var(--accent-green);
+  padding: 0;
+}
+
+.input::placeholder {
+  color: var(--nord3-bright);
+  opacity: 0.5;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+/* neofetch styles */
+.neofetch {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.neofetchArt {
+  color: var(--accent-cyan);
+  font-size: 10px;
+  line-height: 1.2;
+  white-space: pre;
+  flex-shrink: 0;
+}
+
+.neofetchInfo {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.neofetchSep {
+  color: var(--accent-cyan);
+  margin: 2px 0;
+}
+
+.neofetchLabel {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.neofetchValue {
+  color: var(--text-secondary);
+}
+
+.colorBlocks {
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.colorBlock {
+  width: 20px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* matrix effect */
+.matrixOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .neofetch {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .neofetchArt {
+    font-size: 7px;
+  }
+}
