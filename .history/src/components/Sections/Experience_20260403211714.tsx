@@ -64,7 +64,7 @@ export default function Experience() {
             <div className={`${styles.dot} ${styles.dotIntern}`} />
             <div className={styles.content}>
               <div className={styles.period}>{intern.period}</div>
-              <div className={styles.role}>{intern.company}{intern.team ? ` — ${intern.team}` : ''}</div>
+              <div className={styles.role}>{intern.company} &mdash; {intern.team}</div>
               <div className={styles.topic}>Topic: {intern.topic}</div>
               {intern.mentor && (
                 <div className={styles.advisor}>Mentor: {intern.mentor}</div>

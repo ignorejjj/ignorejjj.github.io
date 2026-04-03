@@ -12,7 +12,7 @@ export const projects: Project[] = [
     name: 'FlashRAG',
     description: 'A Python toolkit for efficient RAG research — plug-and-play components covering 16+ advanced RAG methods, 50+ pre-built pipelines, and one-click evaluation. Adopted by 2k+ developers worldwide.',
     url: 'https://github.com/RUC-NLPIR/FlashRAG',
-    stars: '3k+',
+    stars: '2k+',
     tags: ['RAG', 'Toolkit', 'LLM'],
   },
   {

@@ -22,17 +22,10 @@ export interface Award {
 
 export const internships: Internship[] = [
   {
-    company: 'Microsoft Research Asia',
-    team: '',
-    topic: 'AutoResearch',
-    period: 'Mar. 2026 - Present',
-    mentor: 'Kai Qiu, Chong Luo',
-  },
-  {
     company: 'Alibaba',
     team: 'Tongyi Lab',
     topic: 'Latent Reasoning for Foundation Embedding Model',
-    period: 'Sep. 2025 - Mar. 2026',
+    period: 'Sep. 2025 - Present',
     mentor: 'Dingkun Long',
   },
 ]
