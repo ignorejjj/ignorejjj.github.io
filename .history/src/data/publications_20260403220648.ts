@@ -90,9 +90,6 @@ export const publications: Publication[] = [
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2505.10413',
     codeUrl: 'https://github.com/ignorejjj/LongRefiner',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/collections/jinjiajie/longrefiner' },
-    ],
   },
   {
     title: 'RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation',

@@ -17,10 +17,6 @@ export const publications: Publication[] = [
     venue: 'Preprint, 2026',
     year: 2026,
     paperUrl: 'https://arxiv.org/pdf/2602.22897',
-    codeUrl: 'https://github.com/RUC-NLPIR/OmniGAIA',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/collections/RUC-NLPIR/omnigaia' },
-    ],
   },
   {
     title: 'LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval',
@@ -29,10 +25,6 @@ export const publications: Publication[] = [
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2603.01425',
-    codeUrl: 'https://github.com/ignorejjj/LaSER',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/Alibaba-NLP/LaSER-Qwen3-0.6B' },
-    ],
   },
   {
     title: 'GISA: A Benchmark for General Information-Seeking Assistant',
@@ -63,16 +55,7 @@ export const publications: Publication[] = [
     authors: 'Jiajie Jin, Yuyao Zhang, Yimeng Xu, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
     venue: 'Preprint, 2025',
     year: 2025,
-    highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2510.16844',
-    codeUrl: 'https://github.com/ignorejjj/FinSight',
-  },
-  {
-    title: 'Agentic Entropy-Balanced Policy Optimization',
-    authors: 'Guanting Dong, Libo Bao, Zhe Wang, Kangxi Zhao, Xiaoxi Li, Jiajie Jin, Jiacheng Yang, Hangyu Mao, Feng Zhang, Zhicheng Dou',
-    venue: 'Preprint, 2025',
-    year: 2025,
-    paperUrl: 'https://arxiv.org/pdf/2510.14545',
   },
   {
     title: 'Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning',
@@ -90,9 +73,6 @@ export const publications: Publication[] = [
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2505.10413',
     codeUrl: 'https://github.com/ignorejjj/LongRefiner',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/collections/jinjiajie/longrefiner' },
-    ],
   },
   {
     title: 'RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation',
@@ -100,10 +80,6 @@ export const publications: Publication[] = [
     venue: 'ACL 2025 Main',
     year: 2025,
     paperUrl: 'https://aclanthology.org/2025.acl-long.179.pdf',
-    codeUrl: 'https://github.com/RUC-NLPIR/RAG-Critic',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/dongguanting/RAG-Critic-3B' },
-    ],
   },
   {
     title: 'Neuro-Symbolic Query Compiler',
@@ -119,7 +95,6 @@ export const publications: Publication[] = [
     venue: 'ACL 2025 Main',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2412.11919',
-    codeUrl: 'https://github.com/sunnynexus/RetroLLM',
   },
   {
     title: 'WebThinker: Empowering Large Reasoning Models with Deep Research Capability',
@@ -160,9 +135,6 @@ export const publications: Publication[] = [
     highlight: true,
     paperUrl: 'https://arxiv.org/abs/2405.13576',
     codeUrl: 'https://github.com/RUC-NLPIR/FlashRAG',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets' },
-    ],
   },
   {
     title: 'From Matching to Generation: A Survey on Generative Information Retrieval',
@@ -171,12 +143,6 @@ export const publications: Publication[] = [
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2404.14851',
     codeUrl: 'https://github.com/RUC-NLPIR/GenIR-Survey',
-  },
-  {
-    title: 'Retrieving Intent-covering Demonstrations for Clarification Generation in Conversational Search Systems',
-    authors: 'Zhenduo Zhao, Chao Qu, Zhicheng Dou, Haocong Chen, Jiajie Jin',
-    venue: 'KDD 2025',
-    year: 2025,
   },
   // 2024
   {
@@ -209,12 +175,6 @@ export const publications: Publication[] = [
     year: 2024,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2402.12174',
-  },
-  {
-    title: 'Advancing Presurgical Non-Invasive Molecular Subgroup Prediction in Medulloblastoma Using Artificial Intelligence and MRI Signatures',
-    authors: 'Yan Ren Jeffrey Wang, Pengfei Wang, Zihan Yan, Quan Zhou, Fatma Gunturkun, Peng Li, Yanshen Hu, Wei Emma Wu, Jiajie Jin, Tyrone Lumar, Stacie Stapleton, David I. Sandberg, Wafik Zaky, Murali Chintagumpala, Donald William Parsons, Gregory N. Fuller, Jian Zuo, Robert C. Dauser, William E. Whitehead, Laurie E. Ackerman, Andrew Jea, Lam Sandi Ka Kei, Xiaoqian Jiang, Tielin Qin',
-    venue: 'Cancer Cell, 2024',
-    year: 2024,
   },
   // 2023
   {

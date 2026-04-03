@@ -17,10 +17,6 @@ export const publications: Publication[] = [
     venue: 'Preprint, 2026',
     year: 2026,
     paperUrl: 'https://arxiv.org/pdf/2602.22897',
-    codeUrl: 'https://github.com/RUC-NLPIR/OmniGAIA',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/collections/RUC-NLPIR/omnigaia' },
-    ],
   },
   {
     title: 'LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval',
@@ -29,10 +25,6 @@ export const publications: Publication[] = [
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2603.01425',
-    codeUrl: 'https://github.com/ignorejjj/LaSER',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/Alibaba-NLP/LaSER-Qwen3-0.6B' },
-    ],
   },
   {
     title: 'GISA: A Benchmark for General Information-Seeking Assistant',
@@ -63,9 +55,7 @@ export const publications: Publication[] = [
     authors: 'Jiajie Jin, Yuyao Zhang, Yimeng Xu, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
     venue: 'Preprint, 2025',
     year: 2025,
-    highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2510.16844',
-    codeUrl: 'https://github.com/ignorejjj/FinSight',
   },
   {
     title: 'Agentic Entropy-Balanced Policy Optimization',
@@ -90,9 +80,6 @@ export const publications: Publication[] = [
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2505.10413',
     codeUrl: 'https://github.com/ignorejjj/LongRefiner',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/collections/jinjiajie/longrefiner' },
-    ],
   },
   {
     title: 'RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation',
@@ -100,10 +87,6 @@ export const publications: Publication[] = [
     venue: 'ACL 2025 Main',
     year: 2025,
     paperUrl: 'https://aclanthology.org/2025.acl-long.179.pdf',
-    codeUrl: 'https://github.com/RUC-NLPIR/RAG-Critic',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/dongguanting/RAG-Critic-3B' },
-    ],
   },
   {
     title: 'Neuro-Symbolic Query Compiler',
@@ -119,7 +102,6 @@ export const publications: Publication[] = [
     venue: 'ACL 2025 Main',
     year: 2025,
     paperUrl: 'https://arxiv.org/pdf/2412.11919',
-    codeUrl: 'https://github.com/sunnynexus/RetroLLM',
   },
   {
     title: 'WebThinker: Empowering Large Reasoning Models with Deep Research Capability',
@@ -160,9 +142,6 @@ export const publications: Publication[] = [
     highlight: true,
     paperUrl: 'https://arxiv.org/abs/2405.13576',
     codeUrl: 'https://github.com/RUC-NLPIR/FlashRAG',
-    extraLinks: [
-      { label: 'HuggingFace', url: 'https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets' },
-    ],
   },
   {
     title: 'From Matching to Generation: A Survey on Generative Information Retrieval',
