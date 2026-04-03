@@ -20,10 +20,10 @@ export default function Publications() {
   const basePubs = viewMode === 'selected' ? selectedPubs : publications
   const filteredPubs = search.trim()
     ? basePubs.filter(p =>
-        p.title.toLowerCase().includes(search.toLowerCase()) ||
-        p.authors.toLowerCase().includes(search.toLowerCase()) ||
-        p.venue.toLowerCase().includes(search.toLowerCase())
-      )
+      p.title.toLowerCase().includes(search.toLowerCase()) ||
+      p.authors.toLowerCase().includes(search.toLowerCase()) ||
+      p.venue.toLowerCase().includes(search.toLowerCase())
+    )
     : basePubs
   const years = [...new Set(filteredPubs.map(p => p.year))].sort((a, b) => b - a)
 
