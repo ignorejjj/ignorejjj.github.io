@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { publications, publicationYears } from '../../data/publications'
+import { publications } from '../../data/publications'
 import CommandPrompt from '../Terminal/CommandPrompt'
 import styles from './Publications.module.css'
 
