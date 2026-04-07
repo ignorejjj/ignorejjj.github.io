@@ -138,7 +138,6 @@ export const publications: Publication[] = [
     authors: 'Xiaoxi Li, Guanting Dong, Jiajie Jin, Yuyao Zhang, Yujia Zhou, Yutao Zhu, Peitian Zhang, Zhicheng Dou',
     venue: 'EMNLP 2025 Main, Oral (CCF-B)',
     year: 2025,
-    highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2501.05366',
     codeUrl: 'https://github.com/sunnynexus/Search-o1',
     extraLinks: [

@@ -24,7 +24,7 @@ export const internships: Internship[] = [
   {
     company: 'Microsoft Research Asia',
     team: '',
-    topic: 'AutoResearch',
+    topic: 'Auto Research',
     period: 'Mar. 2026 - Present',
     mentor: 'Kai Qiu, Chong Luo',
   },
