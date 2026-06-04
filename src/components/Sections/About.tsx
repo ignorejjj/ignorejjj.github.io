@@ -63,7 +63,7 @@ export default function About() {
 
         <div className={styles.research}>
           <div className={styles.researchHeader}>
-            <span className={styles.researchIcon}>🧭</span> Research Interests
+            Research Interests
           </div>
           <p className={styles.researchIntro}>{aboutData.researchIntro}</p>
           <div className={styles.themeList}>
@@ -92,7 +92,7 @@ export default function About() {
 
         <div className={styles.education}>
           <div className={styles.educationHeader}>
-            <span className={styles.educationIcon}>🎓</span> Education
+            Education
           </div>
           <div className={styles.educationList}>
             {experiences.map((exp, idx) => (

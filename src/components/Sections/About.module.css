@@ -24,11 +24,12 @@
 }
 
 .name {
-  font-size: 24px;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--text-primary);
   margin-bottom: 4px;
-  font-family: inherit;
 }
 
 .nameCn {
@@ -78,9 +79,9 @@
 
 .paragraph {
   color: var(--text-secondary);
-  margin-bottom: 12px;
-  font-size: 13px;
-  line-height: 1.7;
+  margin-bottom: 14px;
+  font-size: 14.5px;
+  line-height: 1.75;
 }
 
 .linePrefix {
@@ -95,9 +96,10 @@
   align-items: center;
   gap: 8px;
   padding: 12px 16px;
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  font-family: var(--font-mono);
 }
 
 .interestsLabel {
@@ -112,17 +114,18 @@
 
 /* Research interests section */
 .research {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 .researchHeader {
-  color: var(--accent-green);
-  font-size: 14px;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 21px;
   font-weight: 600;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .researchIcon {
@@ -131,9 +134,9 @@
 
 .researchIntro {
   color: var(--text-secondary);
-  font-size: 13px;
-  line-height: 1.7;
-  margin-bottom: 16px;
+  font-size: 14.5px;
+  line-height: 1.72;
+  margin-bottom: 18px;
 }
 
 .themeList {
@@ -143,25 +146,27 @@
 }
 
 .themeItem {
-  padding: 12px 16px;
+  padding: 16px 18px;
   background: var(--bg-primary);
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--accent-purple);
+  border-left: 3px solid var(--accent-cyan);
+  box-shadow: var(--shadow-sm);
 }
 
 .themeTitle {
-  color: var(--accent-yellow);
-  font-size: 13px;
+  color: var(--text-primary);
+  font-size: 14.5px;
   font-weight: 600;
+  letter-spacing: -0.01em;
   margin-bottom: 6px;
 }
 
 .themeDesc {
   color: var(--text-secondary);
-  font-size: 13px;
-  line-height: 1.6;
-  margin-bottom: 8px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  margin-bottom: 10px;
 }
 
 .themeProjects {
@@ -189,17 +194,18 @@
 
 /* Education section */
 .education {
-  margin-top: 20px;
+  margin-top: 36px;
 }
 
 .educationHeader {
-  color: var(--accent-green);
-  font-size: 14px;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 21px;
   font-weight: 600;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .educationIcon {

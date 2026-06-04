@@ -1,16 +1,16 @@
 .window {
   background: var(--bg-terminal);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(136, 192, 208, 0.05);
+  box-shadow: var(--shadow-lg);
 }
 
 .titleBar {
   display: flex;
   align-items: center;
-  padding: 12px 16px;
-  background: var(--nord2);
+  padding: 13px 18px;
+  background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
   gap: 8px;
   user-select: none;
@@ -22,26 +22,28 @@
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
-  transition: opacity 0.2s;
+  box-shadow: inset 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+  transition: filter 0.2s;
 }
 
-.dot:hover {
-  opacity: 0.8;
+.titleBar:hover .dot {
+  filter: brightness(1.05);
 }
 
-.dotRed { background: var(--accent-red); }
-.dotYellow { background: var(--accent-yellow); }
-.dotGreen { background: var(--accent-green); }
+.dotRed { background: #f0a89e; }
+.dotYellow { background: #f0d29a; }
+.dotGreen { background: #aacbac; }
 
 .titleText {
   flex: 1;
   text-align: center;
   color: var(--text-muted);
+  font-family: var(--font-mono);
   font-size: 12px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .content {

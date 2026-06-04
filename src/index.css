@@ -18,27 +18,50 @@
   --nord14: #A3BE8C;
   --nord15: #B48EAD;
 
-  /* Semantic Colors */
-  --bg-primary: var(--nord0);
-  --bg-terminal: var(--nord1);
-  --bg-hover: var(--nord2);
-  --border-color: var(--nord3);
-  --text-primary: var(--nord6);
-  --text-secondary: var(--nord4);
-  --text-muted: var(--nord3-bright);
-  --accent-cyan: var(--nord8);
-  --accent-blue: var(--nord9);
-  --accent-green: var(--nord14);
-  --accent-purple: var(--nord15);
-  --accent-yellow: var(--nord13);
-  --accent-red: var(--nord11);
-  --accent-orange: var(--nord12);
+  /* ===== Claude-inspired warm light palette ===== */
+  /* Surfaces */
+  --bg-base: #f6f3ec;          /* warm paper page background */
+  --bg-primary: #ffffff;       /* inset / nested panels */
+  --bg-secondary: #f0ece2;     /* chips / code inset */
+  --bg-terminal: #ffffff;      /* main card / window */
+  --bg-elevated: #ffffff;      /* cards */
+  --bg-hover: rgba(31, 30, 28, 0.04);
+  --border-color: #e7e1d4;     /* warm light border */
+  --border-strong: #d8d0bf;
 
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  font-size: 14px;
-  line-height: 1.6;
+  /* Text */
+  --text-primary: #1f1e1c;     /* deep warm charcoal */
+  --text-secondary: #4f4a42;
+  --text-muted: #8c857a;
+
+  /* Accents — coral primary (Claude), restrained warm support */
+  --accent-cyan: #c45c3a;      /* primary coral/terracotta (used as primary everywhere) */
+  --accent-blue: #a8492c;      /* deeper coral for hover */
+  --accent-green: #3f7d54;     /* muted green for prompts / my-name */
+  --accent-purple: #8a6a4f;    /* warm taupe for venues / tags */
+  --accent-yellow: #b8862f;    /* amber for stars */
+  --accent-red: #c0392b;
+  --accent-orange: #cc6b3f;
+
+  /* Effects */
+  --primary: var(--accent-cyan);
+  --primary-glow: rgba(196, 92, 58, 0.14);
+  --glass-blur: 12px;
+  --radius: 16px;
+  --shadow-sm: 0 1px 2px rgba(31, 30, 28, 0.05);
+  --shadow-md: 0 4px 16px rgba(31, 30, 28, 0.06);
+  --shadow-lg: 0 14px 40px rgba(31, 30, 28, 0.10);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.65;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-base);
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -53,9 +76,16 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(196, 92, 58, 0.05), transparent 60%);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+code, kbd, pre, samp {
+  font-family: var(--font-mono);
 }
 
 a {
@@ -70,23 +100,23 @@ a:hover {
 }
 
 ::selection {
-  background-color: var(--nord3);
+  background-color: rgba(196, 92, 58, 0.18);
   color: var(--text-primary);
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--nord3);
-  border-radius: 4px;
+  background: rgba(31, 30, 28, 0.16);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--nord3-bright);
+  background: rgba(31, 30, 28, 0.28);
 }

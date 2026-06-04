@@ -1,7 +1,10 @@
 .wrapper {
-    margin-top: 20px;
-    border-top: 1px solid var(--border-color);
-    padding-top: 16px;
+    margin-top: 28px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: var(--bg-secondary);
+    padding: 18px 20px;
+    font-family: var(--font-mono);
 }
 
 .history {

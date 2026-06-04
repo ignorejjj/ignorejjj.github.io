@@ -45,15 +45,17 @@ function App() {
       {konamiActive && <div className="konami-overlay">
         <div className="konami-text">🎮 KONAMI CODE ACTIVATED! 🎮<br />You found the secret!</div>
       </div>}
-      <header className="app-header">
-        <div className="ascii-art">
-          {`     _ _       _ _         _ _
-    | (_) __ _(_|_) ___   | (_)_ __
- _  | | |/ _\` | | |/ _ \\  | | | '_ \\
-| |_| | | (_| | | |  __/  | | | | | |
- \\___/|_|\\__,_|_|_|\\___|  |_|_|_| |_|`}
+      <header className="hero">
+        <div className="hero-kicker">
+          <span className="hero-kicker-prompt">visitor@jjj.dev</span>
+          <span className="hero-kicker-sep">:~$</span>
+          <span className="hero-kicker-cmd">whoami</span>
+          <span className="blink-cursor">█</span>
         </div>
-        <p className="subtitle">PhD Student @ RUC | RAG &middot; LLM &middot; AI Agents</p>
+        <h1 className="hero-name">
+          Jiajie&nbsp;Jin <span className="hero-name-cn">金佳杰</span>
+        </h1>
+        <p className="hero-role">PhD Student @ RUC&nbsp;·&nbsp;Gaoling School of AI</p>
       </header>
 
       <main className="app-main">
@@ -70,7 +72,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <span className="footer-prompt">$</span> echo "Built with React + Vite | Nord Theme"
+        <span className="footer-prompt">$</span> echo "Built with React + Vite + Framer Motion"
         <br />
         <span className="footer-output">&copy; {new Date().getFullYear()} Jiajie Jin. All rights reserved.</span>
       </footer>

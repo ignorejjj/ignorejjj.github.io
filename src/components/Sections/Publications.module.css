@@ -3,24 +3,26 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 12px 0 8px;
+  margin: 18px 0 8px;
   flex-wrap: wrap;
 }
 
 .viewToggle {
   display: flex;
-  gap: 0;
-  border-radius: 6px;
-  overflow: hidden;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
   border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
   flex-shrink: 0;
 }
 
 .toggleBtn {
-  padding: 6px 14px;
+  padding: 6px 16px;
   font-size: 12px;
-  font-family: inherit;
-  background: var(--bg-primary);
+  font-family: var(--font-mono);
+  border-radius: 999px;
+  background: transparent;
   color: var(--text-muted);
   border: none;
   cursor: pointer;
@@ -29,18 +31,14 @@
 
 .toggleBtn:hover {
   color: var(--text-primary);
-  background: var(--bg-hover);
 }
 
-.toggleActive {
-  background: var(--accent-cyan);
-  color: var(--bg-terminal);
-  font-weight: 600;
-}
-
+.toggleActive,
 .toggleActive:hover {
   background: var(--accent-cyan);
-  color: var(--bg-terminal);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
 }
 
 .searchBox {
@@ -49,15 +47,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 12px;
-  border-radius: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
   border: 1px solid var(--border-color);
   background: var(--bg-primary);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .searchBox:focus-within {
   border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px var(--primary-glow);
 }
 
 .searchIcon {
@@ -72,7 +71,7 @@
   border: none;
   outline: none;
   color: var(--text-primary);
-  font-family: inherit;
+  font-family: var(--font-mono);
   font-size: 12px;
 }
 
@@ -92,11 +91,11 @@
 }
 
 .clearBtn:hover {
-  color: var(--accent-red, #bf616a);
+  color: var(--accent-red);
 }
 
 .searchResult {
-  color: var(--accent-yellow);
+  color: var(--accent-cyan);
 }
 
 .empty {
@@ -108,8 +107,9 @@
 
 .note {
   color: var(--text-muted);
+  font-family: var(--font-mono);
   font-size: 12px;
-  margin: 8px 0 16px;
+  margin: 8px 0 20px;
 }
 
 .comment {
@@ -117,21 +117,22 @@
 }
 
 .yearGroup {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .yearHeader {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-color);
 }
 
 .yearLabel {
-  color: var(--accent-cyan);
-  font-size: 16px;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -141,26 +142,29 @@
 }
 
 .paper {
-  padding: 12px 16px;
-  margin-bottom: 8px;
-  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  border-radius: 12px;
   border: 1px solid transparent;
+  background: transparent;
   transition: all 0.2s ease;
-  border-left: 3px solid var(--border-color);
 }
 
 .paper:hover {
-  background: var(--bg-hover);
-  border-left-color: var(--accent-cyan);
+  background: var(--bg-primary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
 .highlight {
-  border-left-color: var(--accent-yellow);
-  background: rgba(235, 203, 139, 0.04);
+  background: var(--bg-primary);
+  border-color: var(--border-color);
+  border-left: 3px solid var(--accent-cyan);
 }
 
 .highlight:hover {
-  border-left-color: var(--accent-yellow);
+  border-left-color: var(--accent-cyan);
+  box-shadow: var(--shadow-md);
 }
 
 .star {
@@ -170,41 +174,54 @@
 .paperTitle {
   color: var(--text-primary);
   font-weight: 600;
-  font-size: 13px;
-  margin-bottom: 4px;
+  font-size: 15px;
+  margin-bottom: 6px;
   line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 .authors {
-  color: var(--text-muted);
-  font-size: 12px;
-  margin-bottom: 4px;
-  line-height: 1.5;
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 8px;
+  line-height: 1.55;
 }
 
 .me {
-  color: var(--accent-green);
-  font-weight: 600;
+  color: var(--accent-cyan);
+  font-weight: 700;
 }
 
 .venue {
+  display: inline-block;
   color: var(--accent-purple);
-  font-size: 12px;
-  margin-bottom: 6px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  margin-bottom: 8px;
 }
 
 .paperLinks {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .paperLink {
   color: var(--accent-cyan);
+  font-family: var(--font-mono);
   font-size: 12px;
-  transition: color 0.2s;
+  padding: 2px 8px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
 .paperLink:hover {
   color: var(--accent-blue);
+  background: var(--primary-glow);
+  text-decoration: none;
 }
