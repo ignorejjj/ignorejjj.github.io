@@ -70,7 +70,7 @@
 .hero-tagline .hl {
   color: var(--text-primary);
   font-weight: 600;
-  background: linear-gradient(180deg, transparent 60%, rgba(196, 92, 58, 0.22) 60%);
+  background: linear-gradient(180deg, transparent 60%, rgba(176, 113, 88, 0.20) 60%);
 }
 
 .hero-stats {
@@ -225,7 +225,7 @@
   text-align: center;
   line-height: 1.6;
   animation: konami-bounce 0.5s ease infinite alternate;
-  text-shadow: 0 2px 20px rgba(196, 92, 58, 0.35);
+  text-shadow: 0 2px 20px rgba(176, 113, 88, 0.30);
 }
 
 @keyframes konami-in {

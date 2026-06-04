@@ -34,18 +34,18 @@
   --text-secondary: #4f4a42;
   --text-muted: #8c857a;
 
-  /* Accents — coral primary (Claude), restrained warm support */
-  --accent-cyan: #c45c3a;      /* primary coral/terracotta (used as primary everywhere) */
-  --accent-blue: #a8492c;      /* deeper coral for hover */
-  --accent-green: #3f7d54;     /* muted green for prompts / my-name */
-  --accent-purple: #8a6a4f;    /* warm taupe for venues / tags */
-  --accent-yellow: #b8862f;    /* amber for stars */
-  --accent-red: #c0392b;
-  --accent-orange: #cc6b3f;
+  /* Accents — softened, muted warm palette (calmer terracotta primary) */
+  --accent-cyan: #b07158;      /* primary muted terracotta (used as primary everywhere) */
+  --accent-blue: #925539;      /* deeper terracotta for hover */
+  --accent-green: #5b8366;     /* soft sage for prompts / my-name */
+  --accent-purple: #8a705a;    /* warm taupe for venues / tags */
+  --accent-yellow: #b18a4c;    /* soft ochre for stars */
+  --accent-red: #b1574a;       /* muted brick */
+  --accent-orange: #bd7e5d;    /* soft clay */
 
   /* Effects */
   --primary: var(--accent-cyan);
-  --primary-glow: rgba(196, 92, 58, 0.14);
+  --primary-glow: rgba(176, 113, 88, 0.12);
   --glass-blur: 12px;
   --radius: 16px;
   --shadow-sm: 0 1px 2px rgba(31, 30, 28, 0.05);
@@ -78,7 +78,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-base);
   background-image:
-    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(196, 92, 58, 0.05), transparent 60%);
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(176, 113, 88, 0.04), transparent 60%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,7 @@ a:hover {
 }
 
 ::selection {
-  background-color: rgba(196, 92, 58, 0.18);
+  background-color: rgba(176, 113, 88, 0.16);
   color: var(--text-primary);
 }
 
