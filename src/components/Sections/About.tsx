@@ -61,6 +61,35 @@ export default function About() {
           <span className={styles.interestsLabel}>]</span>
         </div>
 
+        <div className={styles.research}>
+          <div className={styles.researchHeader}>
+            <span className={styles.researchIcon}>🧭</span> Research Interests
+          </div>
+          <p className={styles.researchIntro}>{aboutData.researchIntro}</p>
+          <div className={styles.themeList}>
+            {aboutData.researchThemes.map((theme, idx) => (
+              <motion.div
+                key={idx}
+                className={styles.themeItem}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 + idx * 0.1, duration: 0.4 }}
+              >
+                <div className={styles.themeTitle}>{theme.title}</div>
+                <div className={styles.themeDesc}>{theme.desc}</div>
+                <div className={styles.themeProjects}>
+                  {theme.projects.map((p, j) => (
+                    <span key={j} className={styles.themeProject}>
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <p className={styles.researchGoal}>{aboutData.researchGoal}</p>
+        </div>
+
         <div className={styles.education}>
           <div className={styles.educationHeader}>
             <span className={styles.educationIcon}>🎓</span> Education
