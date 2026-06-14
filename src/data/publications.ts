@@ -2,6 +2,7 @@ export interface Publication {
   title: string
   authors: string
   venue: string
+  badges?: string[]
   year: number
   paperUrl?: string
   codeUrl?: string
@@ -11,6 +12,26 @@ export interface Publication {
 
 export const publications: Publication[] = [
   // 2026
+  {
+    title: 'VeriGraph: Towards Verifiable Data-Analytic Agents',
+    authors: 'Jiajie Jin*, Zhao Yang*, Wenle Liao, Yuyang Hu, Guanting Dong, Xiaoxi Li, Yutao Zhu, Zhicheng Dou',
+    venue: 'Preprint, 2026',
+    year: 2026,
+    highlight: true,
+  },
+  {
+    title: 'Toward Generalist Autonomous Research via Hypothesis-Tree Refinement',
+    authors: 'Jiajie Jin*, Yuyang Hu*, Kai Qiu, Qi Dai, Chong Luo, Guanting Dong, Xiaoxi Li, Tong Zhao, Xiaolong Ma, Gongrui Zhang, Zhirong Wu, Bei Liu, Zhengyuan Yang, Linjie Li, Lijuan Wang, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
+    venue: 'Preprint / Technical Report, 2026',
+    badges: ['BAAI Conference 2026 AI4Science Highlight Paper', 'Hugging Face Daily Papers #1'],
+    year: 2026,
+    highlight: true,
+    paperUrl: 'https://arxiv.org/pdf/2606.11926',
+    codeUrl: 'https://github.com/RUC-NLPIR/Arbor',
+    extraLinks: [
+      { label: 'HuggingFace', url: 'https://huggingface.co/papers/2606.11926' },
+    ],
+  },
   {
     title: 'OmniGAIA: Towards Native Omni-Modal AI Agents',
     authors: 'Xiaoxi Li, Wenxiang Jiao, Jiarui Jin, Shijian Wang, Guanting Dong, Jiajie Jin, Hao Wang, Yinuo Wang, Ji-Rong Wen, Yuan Lu, Zhicheng Dou',
@@ -53,7 +74,8 @@ export const publications: Publication[] = [
   {
     title: 'FinSight: Towards Real-World Financial Deep Research',
     authors: 'Jiajie Jin, Yuyao Zhang, Yimeng Xu, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
-    venue: 'ACL 2026 Main (CCF-A)',
+    venue: 'ACL 2026 Main, Oral (CCF-A)',
+    badges: ['Best Paper Candidate'],
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2510.16844',
@@ -124,7 +146,8 @@ export const publications: Publication[] = [
   {
     title: 'WebThinker: Empowering Large Reasoning Models with Deep Research Capability',
     authors: 'Xiaoxi Li*, Jiajie Jin*, Guanting Dong*, Hongjin Qian, Yutao Zhu, Yongkang Wu, Ji-Rong Wen, Zhicheng Dou',
-    venue: 'NeurIPS 2025, Poster (CCF-A)',
+    venue: 'NeurIPS 2025 (CCF-A)',
+    badges: ['Hugging Face Daily Papers #1'],
     year: 2025,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2504.21776',

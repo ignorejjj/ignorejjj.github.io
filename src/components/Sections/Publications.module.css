@@ -192,9 +192,16 @@
   font-weight: 700;
 }
 
-.venue {
+.venueRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.venue,
+.badge {
   display: inline-block;
-  color: var(--accent-purple);
   font-family: var(--font-mono);
   font-size: 11.5px;
   font-weight: 500;
@@ -202,7 +209,14 @@
   border-radius: 999px;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  margin-bottom: 8px;
+}
+
+.venue {
+  color: var(--accent-purple);
+}
+
+.badge {
+  color: var(--accent-green);
 }
 
 .paperLinks {

@@ -39,16 +39,20 @@ export const internships: Internship[] = [
 
 export const awards: Award[] = [
   {
-    title: 'WeiLai Special Scholarship',
-    date: 'Dec. 2022',
+    title: 'BAAI Qingyuan InnoVibe 2026 - Most-Watched Academic Rising Star',
+    date: 'Jun. 2026',
+  },
+  {
+    title: 'First Prize (1/1289), AFAC Financial Intelligence Innovation Competition',
+    date: 'Aug. 2025',
   },
   {
     title: 'First-Class Merit Student Scholarship',
     date: 'Dec. 2024',
   },
   {
-    title: 'First Prize (1/1289), AFAC Financial Intelligence Innovation Competition',
-    date: 'Aug. 2025',
+    title: 'WeiLai Special Scholarship',
+    date: 'Dec. 2022',
   },
 ]
 

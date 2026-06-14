@@ -22,7 +22,8 @@ export default function Publications() {
     ? basePubs.filter(p =>
       p.title.toLowerCase().includes(search.toLowerCase()) ||
       p.authors.toLowerCase().includes(search.toLowerCase()) ||
-      p.venue.toLowerCase().includes(search.toLowerCase())
+      p.venue.toLowerCase().includes(search.toLowerCase()) ||
+      p.badges?.some(badge => badge.toLowerCase().includes(search.toLowerCase()))
     )
     : basePubs
   const years = [...new Set(filteredPubs.map(p => p.year))].sort((a, b) => b - a)
@@ -100,7 +101,12 @@ export default function Publications() {
                   {pub.title}
                 </div>
                 <div className={styles.authors}>{highlightAuthor(pub.authors)}</div>
-                <div className={styles.venue}>{pub.venue}</div>
+                <div className={styles.venueRow}>
+                  <span className={styles.venue}>{pub.venue}</span>
+                  {pub.badges?.map(badge => (
+                    <span key={badge} className={styles.badge}>{badge}</span>
+                  ))}
+                </div>
                 <div className={styles.paperLinks}>
                   {pub.paperUrl && (
                     <a href={pub.paperUrl} target="_blank" rel="noopener noreferrer" className={styles.paperLink}>

@@ -12,7 +12,7 @@ const ASCII_LOGO = `    ___  ___  ___
    |___||___||___|
    |___|_Jiajie Jin___|`
 
-const publications = { total: 25, ccfA: 12 }
+const publications = { total: 26, ccfA: 12 }
 const projectStars = '5k+'
 
 function getNeofetch(): React.ReactNode {
@@ -24,7 +24,7 @@ function getNeofetch(): React.ReactNode {
                 <div className={styles.neofetchSep}>{'─'.repeat(20)}</div>
                 <div><span className={styles.neofetchLabel}>Name:</span> <span className={styles.neofetchValue}>Jiajie Jin (金佳杰)</span></div>
                 <div><span className={styles.neofetchLabel}>Role:</span> <span className={styles.neofetchValue}>PhD Student @ RUC</span></div>
-                <div><span className={styles.neofetchLabel}>Research:</span> <span className={styles.neofetchValue}>RAG · LLM · AI Agents</span></div>
+                <div><span className={styles.neofetchLabel}>Research:</span> <span className={styles.neofetchValue}>Autonomous Agents · Trustworthy AI</span></div>
                 <div><span className={styles.neofetchLabel}>Papers:</span> <span className={styles.neofetchValue}>{publications.total} ({publications.ccfA} CCF-A)</span></div>
                 <div><span className={styles.neofetchLabel}>GitHub Stars:</span> <span className={styles.neofetchValue}>{projectStars}</span></div>
                 <div><span className={styles.neofetchLabel}>Advisor:</span> <span className={styles.neofetchValue}>Prof. Zhicheng Dou</span></div>
@@ -79,10 +79,10 @@ const skillTree = `
 │ React      ██████████░░░░░░░░░ 50%  │
 └──────────────────────────────────────┘
 ┌─── Research ─────────────────────────┐
-│ RAG        ████████████████████ 99%  │
-│ LLM        ████████████████████ 95%  │
-│ AI Agents  ████████████████░░░░ 85%  │
-│ Deep Search████████████████░░░░ 80%  │
+│ LLM Agents ████████████████████ 95%  │
+│ Deep Search██████████████████░░ 90%  │
+│ Trustworthy████████████████░░░░ 80%  │
+│ Knowledge  ████████████████░░░░ 80%  │
 └──────────────────────────────────────┘`
 
 function processCommand(input: string, onNavigate?: (section: string) => void): React.ReactNode {
@@ -132,7 +132,8 @@ function processCommand(input: string, onNavigate?: (section: string) => void): 
                         <div style={{ color: 'var(--accent-yellow)' }}>{'='.repeat(40)}</div>
                         <br />
                         <div>Hi there! I'm a PhD student working on</div>
-                        <div>RAG, LLMs, and AI Agents at RUC.</div>
+                        <div>autonomous research agents, trustworthy AI,</div>
+                        <div>and deep search at RUC.</div>
                         <br />
                         <div>Navigate using the tabs above, or just</div>
                         <div>type commands here for fun! Try "help"</div>
@@ -174,10 +175,10 @@ function processCommand(input: string, onNavigate?: (section: string) => void): 
             return (
                 <div style={{ lineHeight: 1.8 }}>
                     <div style={{ color: 'var(--accent-green)', marginBottom: 4 }}>📊 Research Stats</div>
-                    <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>Publications:</span> <span style={{ color: 'var(--accent-yellow)' }}>25+</span></div>
+                    <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>Publications:</span> <span style={{ color: 'var(--accent-yellow)' }}>26+</span></div>
                     <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>CCF-A Papers:</span> <span style={{ color: 'var(--accent-green)' }}>12</span></div>
                     <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>GitHub Stars:</span> <span style={{ color: 'var(--accent-yellow)' }}>5k+</span></div>
-                    <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>Open Source Projects:</span> <span style={{ color: 'var(--accent-purple)' }}>6</span></div>
+                    <div><span style={{ color: 'var(--accent-cyan)', display: 'inline-block', width: 160 }}>Open Source Projects:</span> <span style={{ color: 'var(--accent-purple)' }}>7</span></div>
                 </div>
             )
         case 'skills':
