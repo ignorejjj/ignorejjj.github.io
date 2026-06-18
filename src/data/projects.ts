@@ -13,7 +13,7 @@ export const projects: Project[] = [
     description: 'A Python toolkit for efficient knowledge-grounded generation research - plug-and-play components for retrieval, generation, and one-click evaluation. Adopted by 2k+ developers worldwide.',
     url: 'https://github.com/RUC-NLPIR/FlashRAG',
     stars: '3k+',
-    tags: ['Knowledge Use', 'Toolkit', 'LLM'],
+    tags: ['Knowledge Use', 'Retrieval', 'Toolkit'],
   },
   {
     name: 'Arbor',
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description: 'Supercharging reasoning models with real-time search — seamlessly injecting external knowledge into chain-of-thought reasoning to tackle knowledge-intensive tasks.',
     url: 'https://github.com/sunnynexus/Search-o1',
     stars: '1k+',
-    tags: ['Search', 'Reasoning', 'LLM'],
+    tags: ['Search', 'Reasoning', 'Agent'],
   },
   {
     name: 'FinSight',

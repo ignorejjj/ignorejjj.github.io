@@ -32,5 +32,5 @@ export const aboutData = {
   ],
   researchGoal:
     "My long-term goal is to build trustworthy, efficient, autonomous, and long-horizon intelligence - agents that reason reliably over extended trajectories and remain accountable for every claim they make. Beyond the lab, I am equally fascinated by how AI can improve the real world, turning these capabilities into practical systems that make everyday life better.",
-  interests: ['Long-Horizon Autonomous Agents', 'Efficient Knowledge Use', 'Trustworthy & Traceable AI'],
+  interests: ['Long-Horizon Autonomy', 'Efficient Knowledge Use', 'Trustworthy & Traceable AI'],
 }
