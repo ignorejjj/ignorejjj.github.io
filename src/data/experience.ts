@@ -39,6 +39,10 @@ export const internships: Internship[] = [
 
 export const awards: Award[] = [
   {
+    title: "Dean's Scholarship (16 University-Wide), Renmin University of China",
+    date: 'Jun. 2026',
+  },
+  {
     title: 'BAAI Qingyuan InnoVibe 2026 - Most-Watched Academic Rising Star',
     date: 'Jun. 2026',
   },
