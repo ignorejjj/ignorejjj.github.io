@@ -75,7 +75,7 @@ export const publications: Publication[] = [
     title: 'FinSight: Towards Real-World Financial Deep Research',
     authors: 'Jiajie Jin, Yuyao Zhang, Yimeng Xu, Hongjin Qian, Yutao Zhu, Zhicheng Dou',
     venue: 'ACL 2026 Main, Oral (CCF-A)',
-    badges: ['Best Paper Candidate'],
+    badges: ['SAC Highlight'],
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2510.16844',

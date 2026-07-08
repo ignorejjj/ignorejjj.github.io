@@ -39,6 +39,10 @@ export const internships: Internship[] = [
 
 export const awards: Award[] = [
   {
+    title: 'SAC Highlight, ACL 2026 (for FinSight)',
+    date: 'Jul. 2026',
+  },
+  {
     title: "Dean's Scholarship (16 University-Wide), Renmin University of China",
     date: 'Jun. 2026',
   },
