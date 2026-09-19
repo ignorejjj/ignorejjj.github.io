@@ -1,0 +1,383 @@
+% 中文版简历 —— 必须使用 XeLaTeX 编译（因含中文字体）：
+%     xelatex main-cn.tex
+% 字体说明：fontset=macnew 使用 macOS 自带的 Songti SC / PingFang SC / Kaiti SC。
+% 若需在 Overleaf 或 Linux 上编译，请将下方 fontset=macnew 改为 fontset=fandol
+% （Fandol 字体随 TeX Live 一同分发，跨平台可用）。
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging
+]{geometry} % for adjusting page geometry
+\usepackage[fontset=macnew, linespread=1.0]{ctex} % 中文支持（XeLaTeX）；linespread=1.0 抑制 ctex 默认的 1.3 倍行距，使版面密度与英文版一致
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={金佳杰简历},
+    pdfauthor={金佳杰},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{最后更新于 2026 年 9 月}\hspace{\widthof{最后更新于 2026 年 9 月}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont 金佳杰
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{北京}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:jinjiajie@ruc.edu.cn}{jinjiajie@ruc.edu.cn}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://github.com/ignorejjj}{github.com/ignorejjj}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://ignorejjj.github.io}{https://ignorejjj.github.io}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+     \section{个人简介}
+
+     \begin{onecolentry}
+     \begin{highlightsforbulletentries}
+         \item 我是中国人民大学高瓴人工智能学院 2025 级博士生，导师为窦志成教授（预计 2029 年毕业）。此前在同院获得人工智能硕士学位，并于中国科学技术大学获得统计学学士学位。
+
+         \item 我的研究面向\textbf{下一代大模型智能体}——要真正承担现实世界中的研究任务，智能体必须具备\textbf{长程自主性}、\textbf{高效性}与\textbf{可信性}。我围绕这三条主线展开工作：
+         \begin{itemize}[topsep=0.05 cm, parsep=0.05 cm, partopsep=0pt, itemsep=0.02 cm, leftmargin=1.2em]
+            \item \textbf{长程自主性：}让智能体自主完成规划、搜索、推理与长周期实验（\textit{WebThinker}、\textit{HiRA}、\textit{FinSight}、\textit{Arbor}）。
+            \item \textbf{知识的高效利用（效果与效率）：}构建基础设施与方法，使大模型以远低的成本准确利用外部知识（\textit{FlashRAG}、\textit{LongRefiner}、\textit{BIDER}）。
+            \item \textbf{可信性（事实性与可追溯性）：}让智能体的推理过程可验证、可审计，做到数值可复现、结论可溯源（\textit{VeriGraph}）。
+         \end{itemize}
+
+         \item 在学术研究之外，我同样热衷于把这些能力转化为真正可用的系统与产品。
+     \end{highlightsforbulletentries}
+
+    \end{onecolentry}
+
+
+
+
+    \section{教育背景}
+        \begin{onecolentry}
+        \begin{highlightsforbulletentries}
+        \item \textbf{中国人民大学 高瓴人工智能学院} \hfill \textit{2025 年 9 月 – 至今} \\
+  人工智能专业 博士研究生 \\
+  导师：窦志成 教授 \\
+
+
+            \item \textbf{中国人民大学 高瓴人工智能学院} \hfill \textit{2023 年 9 月 – 2025 年 7 月} \\
+  人工智能专业 硕士研究生 \\
+  导师：窦志成 教授 \\
+
+  \item \textbf{中国科学技术大学} \hfill \textit{2019 年 9 月 – 2023 年 7 月} \\
+  统计学专业 本科
+        \end{highlightsforbulletentries}
+        \end{onecolentry}
+
+
+
+    \section{论文发表（第一作者 / 共同第一作者）}
+        % 2026
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            FinSight: Towards Real-World Financial Deep Research \\
+            \textit{\textbf{J Jin}, Y Zhang, Y Xu, H Qian, Y Zhu, Z Dou} \\
+            \textit{国际计算语言学年会 ACL 2026 主会，Oral，SAC Highlight（CCF-A）}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval \\
+            \textit{\textbf{J Jin}, Y Zhang, M Li, D Long, P Xie, Y Zhu, Z Dou} \\
+            \textit{国际信息检索大会 SIGIR 2026（CCF-A）}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search \\
+            \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Zhao, H Qian, Z Dou} \\
+            \textit{国际信息检索大会 SIGIR 2026（CCF-A）}
+        \end{onecolentry}
+
+        % 2025
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            Hierarchical Document Refinement for Long-Context Retrieval-Augmented Generation \\
+            \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Wu, Z Li, Q Ye, Z Dou} \\
+            \textit{国际计算语言学年会 ACL 2025 主会，Oral（CCF-A）}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research \\
+            \textit{\textbf{J Jin}, Y Zhu, Z Dou, G Dong, X Yang, C Zhang, T Zhao, Z Yang, JR Wen} \\
+            \textit{国际万维网大会 TheWebConf 2025 Resource Track，Oral（CCF-A）}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            WebThinker: Empowering Large Reasoning Models with Deep Research Capability \\
+            \textit{X Li$^{*}$, \textbf{J Jin}$^{*}$, G Dong$^{*}$, H Qian, Y Zhu, Y Wu, JR Wen, Z Dou} \\
+            \textit{神经信息处理系统大会 NeurIPS 2025（CCF-A）；Hugging Face Daily Papers 第一名}
+        \end{onecolentry}
+
+        % 2024
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            Bider: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence \\
+            \textit{\textbf{J Jin}, Y Zhu, Y Zhou, Z Dou} \\
+            \textit{国际计算语言学年会 ACL 2024 Findings（CCF-A）}
+        \end{onecolentry}
+
+        % Under submission
+        \vspace{0.3 cm}
+        \begin{onecolentry}
+            \textbf{\textit{预印本 / 投稿中}}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            VeriGraph: Towards Verifiable Data Analysis Agents \\
+            \textit{\textbf{J Jin}$^{*}$, Z Yang$^{*}$, W Liao, Y Hu, G Dong, X Li, Y Zhu, Z Dou} \\
+            \textit{预印本，2026}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{onecolentry}
+            Toward Generalist Autonomous Research via Hypothesis-Tree Refinement (Arbor) \\
+            \textit{\textbf{J Jin}$^{*}$, Y Hu$^{*}$, K Qiu, Q Dai, C Luo, G Dong, X Li, T Zhao, X Ma, G Zhang, Z Wu, B Liu, Z Yang, L Li, L Wang, H Qian, Y Zhu, Z Dou} \\
+            \textit{预印本 / 技术报告，2026；智源大会 2026 AI4Science Highlight Paper；Hugging Face Daily Papers 第一名}
+        \end{onecolentry}
+
+
+    \section{项目经历}
+        \begin{twocolentry}{
+            \href{https://github.com/RUC-NLPIR/FlashRAG}{github.com/FlashRAG}
+        }
+            \textbf{FlashRAG：高效检索增强生成研究工具包}\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item 模块化 RAG 研究框架，复现 20+ 种算法、集成 40+ 个数据集；独立完成代码库的大部分开发工作。
+                \item GitHub \textbf{3.5k+} star（曾进入趋势榜前三）；数据集下载量 \textbf{10 万+} 次，论文引用 \textbf{200+} 次。
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{
+            \href{https://github.com/RUC-NLPIR/Arbor}{github.com/Arbor}
+        }
+            \textbf{Arbor：基于假设树精炼的通用自主科研框架}\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item 通用自主科研框架，通过\textbf{假设树精炼}将零散试验沉淀为持久的研究状态，支撑长程实验与自我优化。
+                \item 在全部 \textbf{6} 个任务上取得最佳留出集结果（平均增益为 Codex 与 Claude Code 的 \textbf{2.5} 倍），MLE-Bench Lite 上 Any Medal 达 \textbf{86.36\%}；GitHub \textbf{1.1k+} star。
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{
+            \href{https://github.com/RUC-NLPIR/WebThinker}{github.com/WebThinker}
+        }
+            \textbf{WebThinker：赋予推理大模型深度研究能力}\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item 让推理大模型在自主搜索网页的同时进行深度思考，实现 o1/R1 风格的开放式深度研究；GitHub \textbf{1.4k+} star。
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+        \begin{twocolentry}{
+            \href{https://github.com/RUC-NLPIR/FinSight}{github.com/FinSight}
+        }
+            \textbf{FinSight：面向真实场景的金融深度研究系统}\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item 多智能体金融深度研究系统，自动完成从多源数据采集到\textbf{可直接发布的研报}的全流程，产出专业图表并支持证据溯源；AFAC2025 金融智能创新大赛\textbf{第一名（1/1289）}。
+            \end{highlights}
+        \end{onecolentry}
+
+     \section{科研实习}
+        \begin{onecolentry}
+        \begin{highlightsforbulletentries}
+        \item \textbf{上海人工智能实验室，基础大模型团队} \hfill \textit{2026 年 8 月 – 至今} \\
+方向：搜索智能体后训练、Harness 工程 \\
+  导师：桂韬 \\
+
+        \item \textbf{微软亚洲研究院（MSRA）} \hfill \textit{2026 年 3 月 – 7月} \\
+方向：自主科研（Auto Research） \\
+  导师：邱凯、罗翀 \\
+
+        \item \textbf{阿里巴巴 通义实验室} \hfill \textit{2025 年 9 月 – 2026 年 3 月} \\
+方向：面向基础向量模型的隐空间推理 \\
+  导师：龙定坤 \\
+        \end{highlightsforbulletentries}
+        \end{onecolentry}
+
+
+    \section{获奖荣誉}
+    \begin{highlightsforbulletentries}
+        \item 中国电子学会-腾讯博士生科研激励计划（混元大模型专项） \hfill 2026 年 9 月
+        \item ACL 2026 SAC Highlight（FinSight） \hfill 2026 年 7 月
+        \item 中国人民大学 院长奖学金（全校 16 人） \hfill 2026 年 6 月
+        \item 智源青源 InnoVibe 2026-最受瞩目学术新星 \hfill 2026 年 6 月
+        \item 2025 AFAC 金融智能创新大赛 一等奖（1/1289） \hfill 2025 年 8 月
+        \item 中国人民大学一等学业奖学金 \hfill 2024 年 12 月
+        \item 中国科学技术大学江淮蔚来特别奖学金 \hfill 2022 年 12 月
+        \item 全国大学生数学竞赛 一等奖（安徽赛区） \hfill 2021 年
+    \end{highlightsforbulletentries}
+
+\end{document}

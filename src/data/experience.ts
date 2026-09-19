@@ -39,6 +39,10 @@ export const internships: Internship[] = [
 
 export const awards: Award[] = [
   {
+    title: 'CIE-Tencent Ph.D. Research Incentive Program (Hunyuan Large Model Track)',
+    date: 'Sep. 2026',
+  },
+  {
     title: 'SAC Highlight, ACL 2026 (for FinSight)',
     date: 'Jul. 2026',
   },
@@ -55,12 +59,16 @@ export const awards: Award[] = [
     date: 'Aug. 2025',
   },
   {
-    title: 'First-Class Merit Student Scholarship',
+    title: 'First-Class Academic Scholarship, Renmin University of China',
     date: 'Dec. 2024',
   },
   {
-    title: 'WeiLai Special Scholarship',
+    title: 'WeiLai (JAC-NIO) Special Scholarship, USTC',
     date: 'Dec. 2022',
+  },
+  {
+    title: 'First Prize (Anhui Province), National College Student Mathematics Competition',
+    date: '2021',
   },
 ]
 

@@ -19,6 +19,7 @@ export const projects: Project[] = [
     name: 'Arbor',
     description: 'A general autonomous-research framework that turns scattered experiments into a persistent hypothesis tree, coordinating long-horizon search, evidence, and verified artifact improvement. Selected as a BAAI Conference 2026 AI4Science Highlight Paper and ranked #1 on Hugging Face Daily Papers.',
     url: 'https://github.com/RUC-NLPIR/Arbor',
+    stars: '1.1k+',
     tags: ['Autonomous Research', 'Hypothesis Tree', 'Agent'],
   },
   {
@@ -37,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     name: 'FinSight',
-    description: 'An agentic deep-research system built for the real financial world - automated multi-step analysis, report generation, and decision support across markets. Accepted to ACL 2026 Main, Oral, and selected as a Best Paper Candidate.',
+    description: 'An agentic deep-research system built for the real financial world - automated multi-step analysis, report generation, and decision support across markets. Accepted to ACL 2026 Main, Oral, and selected as an SAC Highlight.',
     url: 'https://github.com/ignorejjj/FinSight',
     tags: ['Finance', 'Deep Research', 'Agent'],
   },

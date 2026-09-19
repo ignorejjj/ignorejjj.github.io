@@ -8,7 +8,7 @@ export const aboutData = {
   scholar: 'https://scholar.google.com/citations?user=iHCuEo8AAAAJ',
   bio: [
     "Hello! I am a first-year Ph.D. student at the Gaoling School of Artificial Intelligence, Renmin University of China, fortunate to be advised by Prof. Zhicheng Dou. I am currently a research intern at Microsoft Research Asia (MSRA), working on autonomous research agents.",
-    "I have published 20+ papers at top-tier AI venues, including 7 accepted first/co-first-author papers at ACL, SIGIR, WWW, and NeurIPS. My recent first/co-first-author preprints include VeriGraph and Arbor, with Arbor selected as a BAAI Conference 2026 AI4Science Highlight Paper and ranked #1 on Hugging Face Daily Papers; I am also the creator of FlashRAG (3.5k+ ⭐) and co-lead WebThinker (1.4k+ ⭐).",
+    "I have published 20+ papers at top-tier AI venues, including 7 accepted first/co-first-author papers at ACL, SIGIR, WWW, and NeurIPS. My recent first/co-first-author preprints include VeriGraph and Arbor, with Arbor selected as a BAAI Conference 2026 AI4Science Highlight Paper, ranked #1 on Hugging Face Daily Papers, and 1.1k+ ⭐ on GitHub; I am also the creator of FlashRAG (3.5k+ ⭐) and co-lead WebThinker (1.4k+ ⭐).",
     "Feel free to reach out if you'd like to discuss research collaborations, share ideas, or simply chat about AI agents and their future.",
   ],
   researchIntro:
