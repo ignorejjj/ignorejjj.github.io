@@ -13,9 +13,17 @@ export interface Publication {
 export const publications: Publication[] = [
   // 2026
   {
-    title: 'VeriGraph: Towards Verifiable Data-Analytic Agents',
+    title: 'CoworkOS: Scaling Agent Coworkers for Real-world Automation',
+    authors: 'Jiajie Jin, Guanting Dong, Chengjun Pan, Xin Deng, Zhuohui Sheng, Guoqiang Wang, Tao Gui, Yutao Zhu, Yujia Chen, Shihong Yi, Binze Hu, Zhixiong Yang, Zhichao Sun, Rui Wang, Han Han, Mingyu Ma, Junhao Huang, Xiaotao Wang, Huicheng Jiang, Yuyang Hu, Xinyu Yang, Wanghan Xu, Yajie Yang, Zhecan Wang, Honglin Guo, Xiaoyu Xing, Xiaoqian Zhang, Yulun Zhu, Xiaoxi Li, Jiahang Lin, Shaofan Liu, Shihan Dou, Zhiheng Xi, Qi Zhang, Yu-Gang Jiang, See-Kiong Ng, Yang Zhang, Tat-Seng Chua, Ji-Rong Wen, Zhicheng Dou',
+    venue: 'arXiv preprint, 2026',
+    year: 2026,
+    highlight: true,
+    paperUrl: 'https://arxiv.org/abs/2611.03178',
+  },
+  {
+    title: 'VeriGraph: Towards Verifiable Data Analysis Agents',
     authors: 'Jiajie Jin*, Zhao Yang*, Wenle Liao, Yuyang Hu, Guanting Dong, Xiaoxi Li, Yutao Zhu, Zhicheng Dou',
-    venue: 'Preprint, 2026',
+    venue: 'NeurIPS 2026 (CCF-A)',
     year: 2026,
     highlight: true,
   },
@@ -46,7 +54,7 @@ export const publications: Publication[] = [
   {
     title: 'LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval',
     authors: 'Jiajie Jin, Yanzhao Zhang, Mingxin Li, Dingkun Long, Pengjun Xie, Yutao Zhu, Zhicheng Dou',
-    venue: 'SIGIR 2026 (CCF-A)',
+    venue: 'SIGIR 2026, Oral (CCF-A)',
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2603.01425',
@@ -65,7 +73,7 @@ export const publications: Publication[] = [
   {
     title: 'HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search',
     authors: 'Jiajie Jin, Xiaoxi Li, Guanting Dong, Yuyao Zhang, Yutao Zhu, Yang Zhao, Hongjin Qian, Zhicheng Dou',
-    venue: 'SIGIR 2026 (CCF-A)',
+    venue: 'SIGIR 2026, Oral (CCF-A)',
     year: 2026,
     highlight: true,
     paperUrl: 'https://arxiv.org/pdf/2507.02652',

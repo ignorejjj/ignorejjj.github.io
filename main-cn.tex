@@ -28,6 +28,7 @@
     pdftitle={金佳杰简历},
     pdfauthor={金佳杰},
     pdfcreator={LaTeX with RenderCV},
+    hypertexnames=false,
     colorlinks=true,
     urlcolor=primaryColor
 ]{hyperref} % for links, metadata and bookmarks
@@ -144,7 +145,7 @@
         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{最后更新于 2026 年 9 月}\hspace{\widthof{最后更新于 2026 年 9 月}}
+        \small\color{gray}\textit{最后更新于 2026 年 11 月}\hspace{\widthof{最后更新于 2026 年 11 月}}
     }}}%
   }%
 }%
@@ -186,26 +187,21 @@
 
     \vspace{5 pt - 0.3 cm}
 
-     \section{个人简介}
+    \section{个人简介}
+    \begin{onecolentry}
+    \begin{highlightsforbulletentries}
+        \item 研究方向聚焦\textbf{信息智能体}，围绕“面向真实世界工作的智能体”，致力于让大模型高效利用外部信息、自主完成复杂任务并交付可验证的成果。我围绕以下三条主线开展研究：
+        \begin{itemize}[topsep=0.05 cm, parsep=0.05 cm, partopsep=0pt, itemsep=0.02 cm, leftmargin=1.2em]
+            \item \textbf{高效信息获取：}提炼关键证据、精炼长文档并提升复杂检索效率（\textit{BIDER}、\textit{LongRefiner}、\textit{LaSER}）。
+            \item \textbf{长程规划执行：}通过自主搜索、深度推理与分层协作完成复杂任务（\textit{Search-o1}、\textit{WebThinker}、\textit{HiRA}）。
+            \item \textbf{可信成果交付：}生成有据可查的研究报告，让分析过程可追溯、结论可验证（\textit{FinSight}、\textit{VeriGraph}）。
+        \end{itemize}
 
-     \begin{onecolentry}
-     \begin{highlightsforbulletentries}
-         \item 我是中国人民大学高瓴人工智能学院 2025 级博士生，导师为窦志成教授（预计 2029 年毕业）。此前在同院获得人工智能硕士学位，并于中国科学技术大学获得统计学学士学位。
+        \item 注重研究成果的开源与应用，代表工作包括开源框架 \textit{FlashRAG}、\textit{FlashRSI} 以及自主科研智能体 \textit{Arbor} 等，主导开发的开源项目累计获 GitHub Star \textbf{7000 余枚}。
 
-         \item 我的研究面向\textbf{下一代大模型智能体}——要真正承担现实世界中的研究任务，智能体必须具备\textbf{长程自主性}、\textbf{高效性}与\textbf{可信性}。我围绕这三条主线展开工作：
-         \begin{itemize}[topsep=0.05 cm, parsep=0.05 cm, partopsep=0pt, itemsep=0.02 cm, leftmargin=1.2em]
-            \item \textbf{长程自主性：}让智能体自主完成规划、搜索、推理与长周期实验（\textit{WebThinker}、\textit{HiRA}、\textit{FinSight}、\textit{Arbor}）。
-            \item \textbf{知识的高效利用（效果与效率）：}构建基础设施与方法，使大模型以远低的成本准确利用外部知识（\textit{FlashRAG}、\textit{LongRefiner}、\textit{BIDER}）。
-            \item \textbf{可信性（事实性与可追溯性）：}让智能体的推理过程可验证、可审计，做到数值可复现、结论可溯源（\textit{VeriGraph}）。
-         \end{itemize}
-
-         \item 在学术研究之外，我同样热衷于把这些能力转化为真正可用的系统与产品。
-     \end{highlightsforbulletentries}
-
+        \item 在 NeurIPS、ICML、ICLR、ACL 等顶级会议和期刊累计发表论文\textbf{20 余篇}，其中以第一作者 / 共同第一作者身份发表\textbf{8 篇}，口头报告\textbf{5 篇}，谷歌学术引用\textbf{3000 余次}。
+    \end{highlightsforbulletentries}
     \end{onecolentry}
-
-
-
 
     \section{教育背景}
         \begin{onecolentry}
@@ -215,84 +211,117 @@
   导师：窦志成 教授 \\
 
 
-            \item \textbf{中国人民大学 高瓴人工智能学院} \hfill \textit{2023 年 9 月 – 2025 年 7 月} \\
-  人工智能专业 硕士研究生 \\
-  导师：窦志成 教授 \\
+            \item \textbf{中国人民大学 高瓴人工智能学院} \hfill \textit{2023 年 9 月 – 2025 年 6 月} \\
+  人工智能专业 硕士阶段（后转入硕博连读）
 
-  \item \textbf{中国科学技术大学} \hfill \textit{2019 年 9 月 – 2023 年 7 月} \\
+  \item \textbf{中国科学技术大学} \hfill \textit{2019 年 9 月 – 2023 年 6 月} \\
   统计学专业 本科
         \end{highlightsforbulletentries}
         \end{onecolentry}
 
 
 
+    \section{科研实习}
+    \begin{onecolentry}
+    \begin{highlightsforbulletentries}
+        \item \textbf{上海人工智能实验室，基础大模型团队} \hfill \textit{2026 年 7 月 -- 至今} \\
+        导师：桂韬。担任\textbf{搜索专项负责人}，参与 Atria-Dawn、书生-S2.1 后训练，主导搜索任务与轨迹合成、强化学习优化及长程任务 Harness 研发。
+        \item \textbf{微软亚洲研究院，深度搜索团队} \hfill \textit{2026 年 3 月 -- 6 月} \\
+        导师：邱凯、罗翀。主导开发 \textbf{Arbor}，通过假设树精炼组织长程实验，在 6 项真实科研任务上超越通用智能体基线。
+        \item \textbf{阿里巴巴通义实验室，搜索智能体团队} \hfill \textit{2025 年 9 月 -- 2026 年 2 月} \\
+        导师：龙定坤。提出隐空间推理检索方法 \textbf{LaSER}，兼顾复杂检索效果与推理效率，发表于 SIGIR 2026，服务内部检索场景。
+    \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \section{获奖荣誉}
+    \begin{highlightsforbulletentries}
+        \item 中国科协青年科技人才培育工程 \hfill 2026 年
+        \item 中国电子学会--腾讯博士生科研激励计划（混元大模型专项） \hfill 2026 年
+        \item ACL SAC Highlight Paper Award（FinSight） \hfill 2026 年
+        \item 智源大会 AI4Science Highlight Paper（Arbor，入选 16 篇之一） \hfill 2026 年
+        \item 中国人民大学院长奖学金 \hfill 2026 年
+        \item 智源青源 InnoVibe 最受瞩目学术新星（全球 25 人） \hfill 2026 年
+        \item AFAC 金融智能创新大赛挑战组冠军（1/1289） \hfill 2025 年
+        \item 中国人民大学一等学业奖学金 \hfill 2025 年
+        \item 中国科学技术大学江淮蔚来特别奖学金 \hfill 2022 年
+        \item 全国大学生数学竞赛一等奖（安徽赛区） \hfill 2021 年
+    \end{highlightsforbulletentries}
+
+    \newpage
     \section{论文发表（第一作者 / 共同第一作者）}
         % 2026
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             FinSight: Towards Real-World Financial Deep Research \\
             \textit{\textbf{J Jin}, Y Zhang, Y Xu, H Qian, Y Zhu, Z Dou} \\
-            \textit{国际计算语言学年会 ACL 2026 主会，Oral，SAC Highlight（CCF-A）}
+            \textit{ACL 2026 主会，Oral，SAC Highlight（CCF-A）}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
+        \begin{onecolentry}
+            VeriGraph: Towards Verifiable Data Analysis Agents \\
+            \textit{\textbf{J Jin}$^{*}$, Z Yang$^{*}$, W Liao, Y Hu, G Dong, X Li, Y Zhu, Z Dou} \\
+            \textit{NeurIPS 2026（CCF-A）}
+        \end{onecolentry}
+
+        \vspace{0.12 cm}
         \begin{onecolentry}
             LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval \\
             \textit{\textbf{J Jin}, Y Zhang, M Li, D Long, P Xie, Y Zhu, Z Dou} \\
-            \textit{国际信息检索大会 SIGIR 2026（CCF-A）}
+            \textit{SIGIR 2026，Oral（CCF-A）}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search \\
             \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Zhao, H Qian, Z Dou} \\
-            \textit{国际信息检索大会 SIGIR 2026（CCF-A）}
+            \textit{SIGIR 2026，Oral（CCF-A）}
         \end{onecolentry}
 
         % 2025
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Hierarchical Document Refinement for Long-Context Retrieval-Augmented Generation \\
             \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Wu, Z Li, Q Ye, Z Dou} \\
-            \textit{国际计算语言学年会 ACL 2025 主会，Oral（CCF-A）}
+            \textit{ACL 2025 主会，Oral（CCF-A）}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research \\
             \textit{\textbf{J Jin}, Y Zhu, Z Dou, G Dong, X Yang, C Zhang, T Zhao, Z Yang, JR Wen} \\
-            \textit{国际万维网大会 TheWebConf 2025 Resource Track，Oral（CCF-A）}
+            \textit{TheWebConf 2025 Resource Track，Oral（CCF-A）}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             WebThinker: Empowering Large Reasoning Models with Deep Research Capability \\
             \textit{X Li$^{*}$, \textbf{J Jin}$^{*}$, G Dong$^{*}$, H Qian, Y Zhu, Y Wu, JR Wen, Z Dou} \\
-            \textit{神经信息处理系统大会 NeurIPS 2025（CCF-A）；Hugging Face Daily Papers 第一名}
+            \textit{NeurIPS 2025（CCF-A）；Hugging Face Daily Papers 第一名}
         \end{onecolentry}
 
         % 2024
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Bider: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence \\
             \textit{\textbf{J Jin}, Y Zhu, Y Zhou, Z Dou} \\
-            \textit{国际计算语言学年会 ACL 2024 Findings（CCF-A）}
+            \textit{ACL 2024 Findings（CCF-A）}
         \end{onecolentry}
 
         % Under submission
-        \vspace{0.3 cm}
+        \vspace{0.18 cm}
         \begin{onecolentry}
             \textbf{\textit{预印本 / 投稿中}}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
-            VeriGraph: Towards Verifiable Data Analysis Agents \\
-            \textit{\textbf{J Jin}$^{*}$, Z Yang$^{*}$, W Liao, Y Hu, G Dong, X Li, Y Zhu, Z Dou} \\
-            \textit{预印本，2026}
+            \href{https://arxiv.org/abs/2611.03178}{CoworkOS: Scaling Agent Coworkers for Real-world Automation} \\
+            \textit{\textbf{J Jin}, G Dong, C Pan, et al.} \\
+            \textit{arXiv:2611.03178, 2026}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Toward Generalist Autonomous Research via Hypothesis-Tree Refinement (Arbor) \\
             \textit{\textbf{J Jin}$^{*}$, Y Hu$^{*}$, K Qiu, Q Dai, C Luo, G Dong, X Li, T Zhao, X Ma, G Zhang, Z Wu, B Liu, Z Yang, L Li, L Wang, H Qian, Y Zhu, Z Dou} \\
@@ -300,84 +329,40 @@
         \end{onecolentry}
 
 
-    \section{项目经历}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/FlashRAG}{github.com/FlashRAG}
-        }
-            \textbf{FlashRAG：高效检索增强生成研究工具包}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item 模块化 RAG 研究框架，复现 20+ 种算法、集成 40+ 个数据集；独立完成代码库的大部分开发工作。
-                \item GitHub \textbf{3.5k+} star（曾进入趋势榜前三）；数据集下载量 \textbf{10 万+} 次，论文引用 \textbf{200+} 次。
-            \end{highlights}
-        \end{onecolentry}
+    \vspace{0.15 cm}
+    {\small $^{*}$ 表示共同第一作者。}
 
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/Arbor}{github.com/Arbor}
-        }
-            \textbf{Arbor：基于假设树精炼的通用自主科研框架}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item 通用自主科研框架，通过\textbf{假设树精炼}将零散试验沉淀为持久的研究状态，支撑长程实验与自我优化。
-                \item 在全部 \textbf{6} 个任务上取得最佳留出集结果（平均增益为 Codex 与 Claude Code 的 \textbf{2.5} 倍），MLE-Bench Lite 上 Any Medal 达 \textbf{86.36\%}；GitHub \textbf{1.1k+} star。
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/WebThinker}{github.com/WebThinker}
-        }
-            \textbf{WebThinker：赋予推理大模型深度研究能力}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item 让推理大模型在自主搜索网页的同时进行深度思考，实现 o1/R1 风格的开放式深度研究；GitHub \textbf{1.4k+} star。
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/FinSight}{github.com/FinSight}
-        }
-            \textbf{FinSight：面向真实场景的金融深度研究系统}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item 多智能体金融深度研究系统，自动完成从多源数据采集到\textbf{可直接发布的研报}的全流程，产出专业图表并支持证据溯源；AFAC2025 金融智能创新大赛\textbf{第一名（1/1289）}。
-            \end{highlights}
-        \end{onecolentry}
-
-     \section{科研实习}
-        \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-        \item \textbf{上海人工智能实验室，基础大模型团队} \hfill \textit{2026 年 8 月 – 至今} \\
-方向：搜索智能体后训练、Harness 工程 \\
-  导师：桂韬 \\
-
-        \item \textbf{微软亚洲研究院（MSRA）} \hfill \textit{2026 年 3 月 – 7月} \\
-方向：自主科研（Auto Research） \\
-  导师：邱凯、罗翀 \\
-
-        \item \textbf{阿里巴巴 通义实验室} \hfill \textit{2025 年 9 月 – 2026 年 3 月} \\
-方向：面向基础向量模型的隐空间推理 \\
-  导师：龙定坤 \\
-        \end{highlightsforbulletentries}
-        \end{onecolentry}
-
-
-    \section{获奖荣誉}
-    \begin{highlightsforbulletentries}
-        \item 中国电子学会-腾讯博士生科研激励计划（混元大模型专项） \hfill 2026 年 9 月
-        \item ACL 2026 SAC Highlight（FinSight） \hfill 2026 年 7 月
-        \item 中国人民大学 院长奖学金（全校 16 人） \hfill 2026 年 6 月
-        \item 智源青源 InnoVibe 2026-最受瞩目学术新星 \hfill 2026 年 6 月
-        \item 2025 AFAC 金融智能创新大赛 一等奖（1/1289） \hfill 2025 年 8 月
-        \item 中国人民大学一等学业奖学金 \hfill 2024 年 12 月
-        \item 中国科学技术大学江淮蔚来特别奖学金 \hfill 2022 年 12 月
-        \item 全国大学生数学竞赛 一等奖（安徽赛区） \hfill 2021 年
-    \end{highlightsforbulletentries}
+    \section{代表性项目与实践}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/FlashRAG}{FlashRAG：高效检索增强生成研究工具包}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item 主导模块化 RAG 框架设计并独立完成大部分开发，集成 23 种 RAG 方法、7 种信息智能体方法与 40 个数据集，支持国产平台适配；GitHub \textbf{3.6k+} 星标、论文引用 \textbf{300} 次。
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/Arbor}{Arbor：基于假设树精炼的通用自主科研框架}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item 以\textbf{假设树精炼}维护持久研究状态，支撑长程实验与自我优化；6 项任务均取得最佳留出集结果，平均增益为 Codex 与 Claude Code 的 \textbf{2.5 倍}；MLE-Bench Lite Any Medal 达 \textbf{86.36\%}。
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://arxiv.org/abs/2611.03178}{CoworkOS：面向人机协作的通用智能体框架}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item 主导整体架构设计与大部分模块研发，通过多智能体运行时协调规划、执行与验收；原生接入 Office、CAD、Blender，让人和智能体在\textbf{共享工作空间}中共同完成长程任务。
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/FinSight}{FinSight：面向真实场景的金融深度研究系统}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item 自动完成从多源数据采集到\textbf{可直接发布的研报}的全流程，产出专业图表并支持证据溯源；AFAC 2025 挑战组\textbf{冠军（1/1289）}，获 ACL 2026 SAC Highlight。
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{其他开源：}WebThinker（深度研究，1.5k+ 星标）；FlashRSI（集成 13 种自进化算法与 7 种 Harness）。
+    \end{onecolentry}
 
 \end{document}

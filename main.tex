@@ -22,6 +22,7 @@
     pdftitle={Jiajie Jin's CV},
     pdfauthor={Jiajie Jin},
     pdfcreator={LaTeX with RenderCV},
+    hypertexnames=false,
     colorlinks=true,
     urlcolor=primaryColor
 ]{hyperref} % for links, metadata and bookmarks
@@ -140,7 +141,7 @@
         \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in April 2026}\hspace{\widthof{Last updated in April 2026}}
+        \small\color{gray}\textit{Last updated in November 2026}\hspace{\widthof{Last updated in November 2026}}
     }}}%
   }%
 }%
@@ -169,7 +170,7 @@
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:jjinjiajie@ruc.edu.cn}{jinjiajie@ruc.edu.cn}}%
+        \mbox{\hrefWithoutArrow{mailto:jinjiajie@ruc.edu.cn}{jinjiajie@ruc.edu.cn}}%
         \kern 5.0 pt%
         \AND%
         \kern 5.0 pt%
@@ -186,26 +187,21 @@
 
     \vspace{5 pt - 0.3 cm}
 
-     \section{About me}
+    \section{About Me}
+    \begin{onecolentry}
+    \begin{highlightsforbulletentries}
+        \item My research focuses on \textbf{information agents for real-world work}: enabling LLMs to use external information efficiently, complete complex tasks autonomously, and deliver verifiable results. I work along three research directions:
+        \begin{itemize}[topsep=0.05 cm, parsep=0.05 cm, partopsep=0pt, itemsep=0.02 cm, leftmargin=1.2em]
+            \item \textbf{Efficient information acquisition:} extracting key evidence, refining long documents, and improving complex retrieval (\textit{BIDER}, \textit{LongRefiner}, \textit{LaSER}).
+            \item \textbf{Long-horizon planning and execution:} combining autonomous search, deep reasoning, and hierarchical collaboration (\textit{Search-o1}, \textit{WebThinker}, \textit{HiRA}).
+            \item \textbf{Verifiable deliverables:} generating evidence-grounded reports with traceable analysis and verifiable conclusions (\textit{FinSight}, \textit{VeriGraph}).
+        \end{itemize}
 
-     \begin{onecolentry}
-     \begin{highlightsforbulletentries}
-         \item I am a Ph.D. student at the Gaoling School of Artificial Intelligence, Renmin University of China, advised by Prof. Zhicheng Dou (expected graduation in 2029). I received my M.S. from the same school and my B.S. in Statistics from the University of Science and Technology of China.
+        \item I turn research into open-source systems, including \textit{FlashRAG}, \textit{FlashRSI}, and the autonomous research agent \textit{Arbor}. Projects I led have received \textbf{7,000+ GitHub stars} in total.
 
-         \item My research works toward the \textbf{next generation of LLM agents} — which, to take on real-world research, must be \textbf{autonomous} over long horizons, \textbf{efficient}, and \textbf{trustworthy}. I contribute to each of these along three threads:
-         \begin{itemize}[topsep=0.05 cm, parsep=0.05 cm, partopsep=0pt, itemsep=0.02 cm, leftmargin=1.2em]
-            \item \textbf{Long-horizon autonomy:} agents that plan, search, reason, and run long-horizon experiments on their own (\textit{WebThinker}, \textit{HiRA}, \textit{FinSight}, \textit{Arbor}).
-            \item \textbf{Efficient knowledge use (effectiveness \& efficiency):} infrastructure and methods that let LLMs exploit external knowledge accurately at a fraction of the cost (\textit{FlashRAG}, \textit{LongRefiner}, \textit{BIDER}).
-            \item \textbf{Trustworthiness (factuality \& traceability):} making agent reasoning verifiable and auditable, so that numbers are reproducible and conclusions are traceable to evidence (\textit{VeriGraph}).
-         \end{itemize}
-
-         \item I am especially driven by turning these capabilities into systems and products that people can use.
-     \end{highlightsforbulletentries}
-
+        \item Published \textbf{20+ papers} at leading conferences and journals, including NeurIPS, ICML, ICLR, and ACL, with \textbf{8 first/co-first-author papers}, \textbf{5 oral presentations}, and \textbf{3,000+ Google Scholar citations}.
+    \end{highlightsforbulletentries}
     \end{onecolentry}
-
-
-
 
     \section{Educational Experience}
         \begin{onecolentry}
@@ -215,56 +211,90 @@
   Advisor: Prof. Zhicheng Dou \\
 
         
-            \item \textbf{Gaoling School of Artificial Intelligence, Renmin University of China (RUC)} \hfill \textit{Sep 2023 – July 2025} \\
-  M.S in Artificial Intelligence \\
-  Advisor: Prof. Zhicheng Dou \\
+            \item \textbf{Gaoling School of Artificial Intelligence, Renmin University of China (RUC)} \hfill \textit{Sep 2023 – June 2025} \\
+  Graduate Study in Artificial Intelligence (transferred to Ph.D. program)
 
-  \item \textbf{University of Science and Technology of China (USTC)} \hfill \textit{Sep 2019 – Jul 2023} \\
+  \item \textbf{University of Science and Technology of China (USTC)} \hfill \textit{Sep 2019 – Jun 2023} \\
   B.S. in Statistics
         \end{highlightsforbulletentries}
         \end{onecolentry}
 
     
 
+    \section{Research Internships}
+    \begin{onecolentry}
+    \begin{highlightsforbulletentries}
+        \item \textbf{Shanghai AI Laboratory, Foundation LLM Team} \hfill \textit{Jul. 2026 -- Present} \\
+        Mentor: Tao Gui. \textbf{Search capability lead} for Atria-Dawn / Intern-S2.1 post-training; develop search task and trajectory synthesis, reinforcement learning, and long-horizon agent harnesses.
+        \item \textbf{Microsoft Research Asia, Deep Search Team} \hfill \textit{Mar. -- Jun. 2026} \\
+        Mentors: Kai Qiu and Chong Luo. Led \textbf{Arbor}, using hypothesis-tree refinement for long-horizon experiments; outperformed general-purpose agent baselines on six research tasks.
+        \item \textbf{Alibaba, Tongyi Lab, Search Agent Team} \hfill \textit{Sep. 2025 -- Feb. 2026} \\
+        Mentor: Dingkun Long. Developed \textbf{LaSER} for efficient latent-reasoning retrieval; SIGIR 2026 Oral, with applications to internal retrieval scenarios.
+    \end{highlightsforbulletentries}
+    \end{onecolentry}
+
+    \section{Awards and Honors}
+    \begin{highlightsforbulletentries}
+        \item CAST Young Science and Technology Talent Cultivation Program \hfill 2026
+        \item CIE--Tencent Ph.D. Research Incentive Program (Hunyuan Track) \hfill 2026
+        \item ACL SAC Highlight Paper Award (FinSight) \hfill 2026
+        \item BAAI AI4Science Highlight Paper (Arbor; one of 16 selected) \hfill 2026
+        \item Dean's Scholarship, Renmin University of China \hfill 2026
+        \item BAAI Qingyuan InnoVibe Academic Rising Star (25 selected worldwide) \hfill 2026
+        \item AFAC Financial Intelligence Challenge Track Champion (1/1289) \hfill 2025
+        \item First-Class Academic Scholarship, Renmin University of China \hfill 2025
+        \item JAC--NIO Special Scholarship, USTC \hfill 2022
+        \item First Prize (Anhui), National College Student Mathematics Competition \hfill 2021
+    \end{highlightsforbulletentries}
+
+    \newpage
     \section{Publications (First / Co-first Author)}
         % 2026
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
+        \begin{onecolentry}
+            VeriGraph: Towards Verifiable Data Analysis Agents \\
+            \textit{\textbf{J Jin}$^{*}$, Z Yang$^{*}$, W Liao, Y Hu, G Dong, X Li, Y Zhu, Z Dou} \\
+            \textit{NeurIPS 2026 (CCF-A)}
+        \end{onecolentry}
+
+
+        \vspace{0.12 cm}
         \begin{onecolentry}
             FinSight: Towards Real-World Financial Deep Research \\
             \textit{\textbf{J Jin}, Y Zhang, Y Xu, H Qian, Y Zhu, Z Dou} \\
             \textit{ACL 2026 Main, Oral, SAC Highlight (CCF-A)}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             LaSER: Internalizing Explicit Reasoning into Latent Space for Dense Retrieval \\
             \textit{\textbf{J Jin}, Y Zhang, M Li, D Long, P Xie, Y Zhu, Z Dou} \\
-            \textit{Annual ACM SIGIR Conference on Research and Development in Information Retrieval 2026 (CCF-A)}
+            \textit{SIGIR 2026, Oral (CCF-A)}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             HiRA: A Hierarchical Reasoning Framework for Decoupled Planning and Execution in Deep Search \\
             \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Zhao, H Qian, Z Dou} \\
-            \textit{Annual ACM SIGIR Conference on Research and Development in Information Retrieval 2026 (CCF-A)}
+            \textit{SIGIR 2026, Oral (CCF-A)}
         \end{onecolentry}
 
         % 2025
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Hierarchical Document Refinement for Long-Context Retrieval-Augmented Generation \\
             \textit{\textbf{J Jin}, X Li, G Dong, Y Zhang, Y Zhu, Y Wu, Z Li, Q Ye, Z Dou} \\
-            \textit{Annual Meeting of the Association for Computational Linguistics 2025 Main Conference, Oral (CCF-A)}
+            \textit{ACL 2025 Main, Oral (CCF-A)}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research \\
             \textit{\textbf{J Jin}, Y Zhu, Z Dou, G Dong, X Yang, C Zhang, T Zhao, Z Yang, JR Wen} \\
             \textit{The Web Conference 2025 Resource Track, Oral (CCF-A)}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             WebThinker: Empowering Large Reasoning Models with Deep Research Capability \\
             \textit{X Li$^{*}$, \textbf{J Jin}$^{*}$, G Dong$^{*}$, H Qian, Y Zhu, Y Wu, JR Wen, Z Dou} \\
@@ -272,27 +302,27 @@
         \end{onecolentry}
 
         % 2024
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Bider: Bridging Knowledge Inconsistency for Efficient Retrieval-Augmented LLMs via Key Supporting Evidence \\
             \textit{\textbf{J Jin}, Y Zhu, Y Zhou, Z Dou} \\
-            \textit{Findings of the Association for Computational Linguistics: ACL 2024 (CCF-A)}
+            \textit{ACL 2024 Findings (CCF-A)}
         \end{onecolentry}
 
         % Under submission
-        \vspace{0.3 cm}
+        \vspace{0.18 cm}
         \begin{onecolentry}
             \textbf{\textit{Preprints / Under Submission}}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
-            VeriGraph: Towards Verifiable Data Analysis Agents \\
-            \textit{\textbf{J Jin}$^{*}$, Z Yang$^{*}$, W Liao, Y Hu, G Dong, X Li, Y Zhu, Z Dou} \\
-            \textit{Preprint, 2026}
+            \href{https://arxiv.org/abs/2611.03178}{CoworkOS: Scaling Agent Coworkers for Real-world Automation} \\
+            \textit{\textbf{J Jin}, G Dong, C Pan, et al.} \\
+            \textit{arXiv:2611.03178, 2026}
         \end{onecolentry}
 
-        \vspace{0.2 cm}
+        \vspace{0.12 cm}
         \begin{onecolentry}
             Toward Generalist Autonomous Research via Hypothesis-Tree Refinement (Arbor) \\
             \textit{\textbf{J Jin}$^{*}$, Y Hu$^{*}$, K Qiu, Q Dai, C Luo, G Dong, X Li, T Zhao, X Ma, G Zhang, Z Wu, B Liu, Z Yang, L Li, L Wang, H Qian, Y Zhu, Z Dou} \\
@@ -300,83 +330,40 @@
         \end{onecolentry}
 
 
-    \section{Projects}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/FlashRAG}{github.com/FlashRAG}
-        }
-            \textbf{FlashRAG: A Python Toolkit for Efficient RAG Research}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Modular RAG framework with 20+ algorithm reproductions and 40+ datasets; independently built most of the codebase.
-                \item \textbf{3.5k+} stars (top-3 on GitHub trending); datasets downloaded \textbf{100k+} times and cited \textbf{200+} times.
-            \end{highlights}
-        \end{onecolentry}
+    \vspace{0.15 cm}
+    {\small $^{*}$ denotes equal contribution.}
 
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/Arbor}{github.com/Arbor}
-        }
-            \textbf{Arbor: Toward Generalist Autonomous Research via Hypothesis-Tree Refinement}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item General autonomous-research framework that turns scattered trials into a durable research state via \textbf{Hypothesis-Tree Refinement} for long-horizon experimentation and self-improvement.
-                \item Best held-out results on all \textbf{6} tasks (\textbf{2.5$\times$} the average gain of Codex and Claude Code) and \textbf{86.36\%} Any Medal on MLE-Bench Lite; \textbf{1.1k+} GitHub stars. Built during my internship at Microsoft Research Asia.
-            \end{highlights}
-        \end{onecolentry}
+    \section{Selected Projects and Applications}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/FlashRAG}{FlashRAG: A Toolkit for Efficient RAG Research}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item Led framework design and implemented most of the codebase; integrates 23 RAG methods, 7 information-agent methods, and 40 datasets, with domestic platform adaptations. \textbf{3.6k+} stars and \textbf{300} citations.
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/Arbor}{Arbor: Autonomous Research via Hypothesis-Tree Refinement}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item Maintains persistent research state via \textbf{hypothesis-tree refinement}. Best held-out results on all \textbf{6} tasks (\textbf{2.5$\times$} the average gain of Codex and Claude Code); \textbf{86.36\%} Any Medal on MLE-Bench Lite.
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://arxiv.org/abs/2611.03178}{CoworkOS: A Framework for Human-Agent Collaboration}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item Led architecture design and most module development. A multi-agent runtime coordinates planning, execution, and acceptance, integrating Office, CAD, and Blender so humans and agents work together in \textbf{shared workspaces}.
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{\href{https://github.com/RUC-NLPIR/FinSight}{FinSight: Real-World Financial Deep Research}}
+    \begin{itemize}[topsep=0.03 cm, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt]
+        \item Automates multi-source data collection, analysis, and \textbf{publication-ready reports} with professional charts and traceable evidence; AFAC 2025 Challenge Track \textbf{champion (1/1289)} and ACL 2026 SAC Highlight.
+    \end{itemize}
+    \end{onecolentry}
+    \vspace{0.07 cm}
+    \begin{onecolentry}
+    \textbf{Other open-source work:} WebThinker (deep research; 1.5k+ stars); FlashRSI (13 self-improvement algorithms and 7 harnesses).
+    \end{onecolentry}
 
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/WebThinker}{github.com/WebThinker}
-        }
-            \textbf{WebThinker: Empowering Large Reasoning Models with Deep Research Capability}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Teach large reasoning models to think deeply while autonomously searching the web, enabling o1/R1-style open-ended deep research; \textbf{1.4k+} GitHub stars.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-        \begin{twocolentry}{
-            \href{https://github.com/RUC-NLPIR/FinSight}{github.com/FinSight}
-        }
-            \textbf{FinSight: Towards Real-World Financial Deep Research}\end{twocolentry}
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Multi-agent financial deep research system automating the full pipeline from multi-source data collection to \textbf{publication-ready reports} with professional charts and evidence tracing; \textbf{1st place (1/1289)} in AFAC2025.
-            \end{highlights}
-        \end{onecolentry}
-
-     \section{Internships}
-        \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-        \item \textbf{Shanghai AI Laboratory, Foundation LLM Team} \hfill \textit{Aug. 2026 – Present} \\
-Topic: Search Agent Post Training, Harness Engineering \\
-  Mentor: Tao Gui \\
-        \item \textbf{Microsoft Research Asia} \hfill \textit{Mar. 2026 – Jul. 2026} \\
-Topic: Auto Research \\
-  Mentor: Kai Qiu, Chong Luo \\
-
-        \item \textbf{Alibaba, Tongyi Lab} \hfill \textit{Sep. 2025 – Mar. 2026} \\
-Topic: Latent Reasoning for Foundation Embedding Model \\
-  Mentor: Dingkun Long \\
-        \end{highlightsforbulletentries}
-        \end{onecolentry}
-
-
-    \section{Awards}
-    \begin{highlightsforbulletentries}
-        \item CIE--Tencent Ph.D. Research Incentive Program (Hunyuan Large Model Track) \hfill Sep 2026
-        \item SAC Highlight, ACL 2026 (for FinSight) \hfill Jul 2026
-        \item Dean's Scholarship (16 University-Wide), Renmin University of China \hfill Jun 2026
-        \item Qingyuan InnoVibe 2026 -- Most-Watched Academic Rising Star, BAAI Conference \hfill Jun 2026
-        \item First Prize (1/1289 teams), AFAC Financial Intelligence Innovation Competition \hfill Aug 2025
-        \item First-Class Academic Scholarship, Renmin University of China \hfill Dec 2024
-        \item WeiLai (JAC-NIO) Special Scholarship, USTC \hfill Dec 2022
-        \item First Prize (Anhui Province), National College Student Mathematics Competition \hfill 2021
-    \end{highlightsforbulletentries}
-    
 \end{document}

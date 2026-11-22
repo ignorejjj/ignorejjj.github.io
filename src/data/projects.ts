@@ -10,14 +10,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     name: 'FlashRAG',
-    description: 'A Python toolkit for efficient knowledge-grounded generation research - plug-and-play components for retrieval, generation, and one-click evaluation. Adopted by 2k+ developers worldwide.',
+    description: 'A Python toolkit for efficient knowledge-grounded generation research - plug-and-play components for retrieval, generation, and one-click evaluation. Integrates 23 RAG methods, 7 information-agent methods, and 40 datasets, with adaptations for Paddle and MindSpore.',
     url: 'https://github.com/RUC-NLPIR/FlashRAG',
-    stars: '3k+',
+    stars: '3.6k+',
     tags: ['Knowledge Use', 'Retrieval', 'Toolkit'],
   },
   {
     name: 'Arbor',
-    description: 'A general autonomous-research framework that turns scattered experiments into a persistent hypothesis tree, coordinating long-horizon search, evidence, and verified artifact improvement. Selected as a BAAI Conference 2026 AI4Science Highlight Paper and ranked #1 on Hugging Face Daily Papers.',
+    description: 'A general autonomous-research framework that turns scattered experiments into a persistent hypothesis tree, coordinating long-horizon search, evidence, and verified artifact improvement. Selected as a BAAI Conference 2026 AI4Science Highlight Paper, ranked #1 on Hugging Face Daily Papers, and featured by VentureBeat.',
     url: 'https://github.com/RUC-NLPIR/Arbor',
     stars: '1.1k+',
     tags: ['Autonomous Research', 'Hypothesis Tree', 'Agent'],
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     name: 'WebThinker',
     description: 'Teaching large reasoning models to think deeply while autonomously searching the web - enabling o1/R1-style models to perform open-ended deep research like a human expert. Ranked #1 on Hugging Face Daily Papers.',
     url: 'https://github.com/RUC-NLPIR/WebThinker',
-    stars: '1k+',
+    stars: '1.5k+',
     tags: ['Reasoning', 'Web Search', 'Agent'],
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     name: 'FinSight',
-    description: 'An agentic deep-research system built for the real financial world - automated multi-step analysis, report generation, and decision support across markets. Accepted to ACL 2026 Main, Oral, and selected as an SAC Highlight.',
+    description: 'An agentic deep-research system built for the real financial world - automated multi-step analysis, report generation, and decision support across markets. ACL 2026 Main, Oral and SAC Highlight; AFAC 2025 Challenge Track champion (1/1289 teams).',
     url: 'https://github.com/ignorejjj/FinSight',
     tags: ['Finance', 'Deep Research', 'Agent'],
   },

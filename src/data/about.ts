@@ -7,17 +7,17 @@ export const aboutData = {
   github: 'https://github.com/ignorejjj',
   scholar: 'https://scholar.google.com/citations?user=iHCuEo8AAAAJ',
   bio: [
-    "Hello! I am a first-year Ph.D. student at the Gaoling School of Artificial Intelligence, Renmin University of China, fortunate to be advised by Prof. Zhicheng Dou. I am currently a research intern at Microsoft Research Asia (MSRA), working on autonomous research agents.",
-    "I have published 20+ papers at top-tier AI venues, including 7 accepted first/co-first-author papers at ACL, SIGIR, WWW, and NeurIPS. My recent first/co-first-author preprints include VeriGraph and Arbor, with Arbor selected as a BAAI Conference 2026 AI4Science Highlight Paper, ranked #1 on Hugging Face Daily Papers, and 1.1k+ ⭐ on GitHub; I am also the creator of FlashRAG (3.5k+ ⭐) and co-lead WebThinker (1.4k+ ⭐).",
-    "Feel free to reach out if you'd like to discuss research collaborations, share ideas, or simply chat about AI agents and their future.",
+    "Hello! I am a second-year Ph.D. student at the Gaoling School of Artificial Intelligence, Renmin University of China, advised by Prof. Zhicheng Dou. I am currently a research intern at Shanghai AI Laboratory, leading search capability development for foundation-model post-training. Previously, I interned at Microsoft Research Asia and Alibaba Tongyi Lab.",
+    "I have published 20+ papers, including 8 first/co-first-author CCF-A papers and 5 oral presentations, with 3,000+ Google Scholar citations. My work received the ACL 2026 SAC Highlight Paper Award (FinSight) and the BAAI Conference 2026 AI4Science Highlight (Arbor). I was selected for the CAST Young Science and Technology Talent Cultivation Program and the CIE-Tencent Ph.D. Research Incentive Program.",
+    "I lead open-source work including FlashRAG, Arbor, WebThinker, FlashRSI, and CoworkOS, spanning information retrieval, autonomous research, self-improvement, and human-agent collaboration. These projects have approximately 7k GitHub stars and 400k+ framework/dataset downloads in total (as of November 2026). Feel free to reach out to discuss research collaborations or AI agents.",
   ],
   researchIntro:
-    "My research works toward the next generation of LLM agents: systems that can act autonomously over long horizons, use knowledge efficiently, and keep their reasoning trustworthy and traceable.",
+    "My research focuses on search and LLM agents, post-training, and self-improvement, with an emphasis on efficient information acquisition, long-horizon planning and execution, and verifiable results.",
   researchThemes: [
     {
       title: 'Long-Horizon Autonomy',
       desc: "Building agents that plan, search, reason, and run extended experiments on their own, with persistent state across open-ended research workflows.",
-      projects: ['WebThinker', 'HiRA', 'FinSight', 'Arbor'],
+      projects: ['WebThinker', 'HiRA', 'Arbor', 'CoworkOS', 'FlashRSI'],
     },
     {
       title: 'Efficient Knowledge Use',
